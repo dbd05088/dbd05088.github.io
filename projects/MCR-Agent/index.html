@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-Level Compositional Reasoning for Interactive Instruction Following</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://bhkim94.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="">
+            MOCA (Coming Soon)
+          </a>
+          <a class="navbar-item" href="">
+            ABP (Coming Soon)
+          </a>
+          <a class="navbar-item" href="">
+            MCR-Agent
+          </a>
+          <a class="navbar-item" href="">
+            CPEM
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered is-full-width">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:42px">
+            Multi-Level Compositional Reasoning for Interactive Instruction Following
+          </h1>
+          <h1 class="title is-4 publication-title">
+            AAAI 2023
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/suvaansh-bhambri-1784bab7/">Suvaansh Bhambri*</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://bhkim94.github.io">Byeonghwi Kim*</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://ppolon.github.io">Jonghyun Choi</a>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Yonsei University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25094/24866"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+              </span>
+              <!-- Video Link.
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yonseivnl/mcr-agent"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src='static/figures/teaser.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Multi-Level Compositional Resoning Agent (MCR-Agent)</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robotic agents performing domestic chores by natural language directives are required to master the complex job of navigating environment and interacting with objects in the environments. The tasks given to the agents are often composite thus are challenging as completing them require to reason about multiple subtasks, e.g., bring a cup of coffee.
+              To address the challenge, we propose to divide and conquer it by breaking the task into multiple subgoals and attend to them individually for better navigation and interaction.
+              We call it Multilevel Compositional Reasoning Agent (MCR-Agent).
+              Specifically, we learn a three-level action policy. At the highest level, we infer a sequence of human-interpretable subgoals to be executed based on language instructions by a highlevel policy composition controller. At the middle level, we discriminatively control the agent’s navigation by a master policy by alternating between a navigation policy and various independent interaction policies.
+              Finally, at the lowest level, we infer manipulation actions with the corresponding object masks using the appropriate interaction policy. Our approach not only generates human interpretable subgoals but also achieves 2.03% absolute gain to comparable state of the arts in the efficiency metric (PLWSR in unseen set) without using rule-based planning or a semantic spatial memory
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video.
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>-->
+      <!--/ Paper video. -->
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3">Multi-Level Compositional Reasoning</h2>
+    <!--
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <div class="content has-text-justified">
+          <p>
+            dd
+          </p>
+        </div>
+      </div>
+      <div class="column is-two-quarter">
+        <img src='static/figures/cp.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:70%">
+      </div>
+    </div>
+    -->
+    <div class="content has-text-justified">
+      <p>
+        Observing that the visual information for navigation considerably varies over time while interacting with objects is largely stationary, we argue that the agent benefits from learning different policy modules for these two different tasks as follows.
+        The navigation needs to reason about the temporal history and global environment information.
+        The interaction with objects requires focusing on local visual cues for precise object localization.
+        In addition, there is a sample imbalance between navigation and interaction actions as navigation actions are far more frequent than interaction actions. This would bias a learned model towards more frequent actions, i.e., navigation.
+      </p>
+      <p>
+        Based on these observations, we design an architecture with three levels of compositional learning; (1) a <span style="font-weight:bold">high-level policy composition controller (PCC)</span> that uses language instructions to generate a sequence of sub-objectives, (2) a <span style="font-weight:bold">master policy</span> that specialises in navigation and determines when and where the agent is required to perform interaction tasks, and (3) <span style="font-weight:bold">interaction policies (IP)</span> that are a collection of subgoal policies that specialise in precise interaction tasks.
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-fullwidth">
+          <img src='static/figures/overview.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Policy Composition Controller</h3>
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <div class="content has-text-justified">
+          <p>
+            The nature of the long-horizon instruction following is highly complex.
+            To address this, we argue that it is beneficial to first generate a high-level subgoal sequence, and then tackle each subgoal individually.
+            For inferring the subgoals, we propose a policy composition controller (PCC) that predicts a subgoal for each ‘step-by-step’ instruction.
+            It gives the intuition on what the agent is attempting to accomplish at any particular instance.
+            PCC consists of a Bi-LSTM to encode language instructions and a fully-connected layer for subgoal classification.
+            PCC achieves 98.5% accuracy on the validation set in ALFRED.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Master Policy</h3>
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <div class="content has-text-justified">
+          <p>
+            The reasoning required for navigation is significantly varied from the interaction.
+            To this end, we propose to use a dedicated module for navigation, which we call ‘master policy.’
+            It not only performs navigation but simultaneously also marks the locations for object interaction along the way.
+          </p>
+          <p>
+            <span style="font-weight:bold">Subtask Language Encoding.</span>
+              The language instructions for a given task can be divided into two types; (1) navigation and (2) interaction.
+              We observed that for completing a given compositional task, the agent needs to navigate to the necessary locations and then interact with relevant objects.
+              For this, we propose to encode the combination of instructions for navigation.
+              In particular, we regard the subtask instruction as a combination of (1) navigation to discover the relevant object and (2) corresponding interactions.
+              We encode these language instruction combinations in a similar manner as PCC.
+          </p>
+          <p>
+            <span style="font-weight:bold">Object Encoding Module (OEM).</span>
+            To find the correct object to be interacted with, we propose an object encoding module that takes as input the subtask language instruction and gives the target object that the agent must locate for interaction.
+            This guides the agent’s navigation by acting as a navigation subgoal monitor that indicates the end of the navigation subgoal and shifts control to
+            the next interaction policy.
+            During navigation, the subgoal monitor uses a pretrained object detector that validates if the relevant object is present in the current view or not.
+            If the agent spots the item, it switches to the appropriate interaction policy; otherwise, it continues to navigate.
+          </p>
+          <p>
+            <span style="font-weight:bold">Navigation Policy.</span>
+            The second component of the master policy is the navigation policy that generates the sequence of navigable low-level actions to locate the correct object for interaction using the processed multi-modal data as input.
+            It uses visual features, subtask instruction features, object encoding, and the embedding of the preceding time step action as inputs.
+            To capture the relationship between the visual observation and language instructions, we dynamically generate filters based on the attended language features and convolve visual features with the filters.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">Interaction Policy</h3>
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <div class="content has-text-justified">
+          <p>
+            Following <span style="color: #305fac; font-weight:bold"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Singh_Factorizing_Perception_and_Policy_for_Interactive_Instruction_Following_ICCV_2021_paper.pdf">MOCA</a></span>, we exploit separate streams for action prediction and object localization due to the contrasting nature of the two tasks.
+            Each interaction policy consists of an action policy module which is responsible for predicting the sequence of actions corresponding to the interaction subgoal, and an interaction perception module which generates the pixel-level object mask for objects that the agent needs to interact with at a particular time step.
+          </p>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3">Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          We employ <span style="color: #305fac; font-weight:bold"><a href="https://askforalfred.com/">ALFRED</a></span> to evaluate our method.
+          There are three splits of environments in ALFRED: ‘train’, ‘validation’, and ‘test’.
+          The validation and test environments are further divided into two folds, seen and unseen, to assess the generalization capacity.
+          The primary metric is the success rate, denoted by ‘SR,’ which measures the percentage of completed tasks.
+          Another metric is the goal-condition success rate, denoted by ‘GC,’ which measures the percentage of satisfied goal conditions.
+          Finally, path-length-weighted (PLW) scores penalize SR and GC by the length of the actions that the agent takes.
+        </p>
+        <p>
+          In unseen environments, MCR-Agent outperforms most prior-arts in terms of PLWSR for both test and validation folds.
+          For seen environments in the test fold, MCR-Agent shows comparable performance with LWIT and EmBERT in terms of SR and PLWSR but these works exhibit relatively stronger bias towards seen environments, which is evidenced by the significant drop in their unseen SR (i.e., 69.5% and 76.3% relative drop, respectively).
+          Similarly, E.T. decently performs in seen environments but shows a drastic drop (77.7% relative) of SR in unseen environments.
+        </p>
+        <p>
+          Our multi-level hierarchical agent converges significantly faster than the flat agent (25th vs. 37th epoch), demonstrating the computational efficiency of our approach.
+          Our policies are trained in two stages.
+          We train interaction policies first, which collectively takes two epochs to converge.
+          We include them in computation and begin the hierarchical agent’s curve from the 3rd epoch, which is effectively the 1st epoch for the master policy.
+        </p>
+        <p>
+          The hierarchical agent consists of the master policy that is dedicated solely to navigation, giving it a significant advantage over the flat agent that learns everything using the same network parameters.
+          It was observed that due to the wide action space, the flat agent occasionally executes irrelevant interactions along the trajectory, which is not the case with MCR-Agent.
+          The dedicated action sets for the master policy and interaction policies improve MCR-Agent by allowing the agent to avoid any unnecessary interactions while traversing to discover the desired object.
+          The interaction policies also perform significantly better because they only master certain short-horizon tasks, which speeds up and simplifies the learning process.
+        </p>
+        <p>
+          For more details, please check out the <span style="color: #305fac; font-weight:bold"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/25094/24866">paper</a></span>.
+        </p>
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <img src="static/tables/comparison_with_sota.png">
+              <h5>Comparison with State-of-the-Art</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-two-quarter">
+            <img src="static/figures/training_efficiency.png">
+            <h5>Training Efficiency</h5>
+          </div>
+
+          <div class="column is-two-quarter">
+            <img src="static/figures/mean_episode_length.png">
+            <h5>Mean Episode Length</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{bhambri2023multi,
+  author    = {Bhambri, Suvaansh and Kim, Byeonghwi and Choi, Jonghyun},
+  title     = {Multi-Level Compositional Reasoning for Interactive Instruction Following},
+  journal   = {AAAI},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          The website template is from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
