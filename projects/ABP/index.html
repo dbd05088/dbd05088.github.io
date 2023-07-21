@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent with the Big Picture: Perceiving Surroundings for Interactive Instruction Following</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://bhkim94.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/MOCA">
+            MOCA
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/ABP">
+            ABP
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/MCR-Agent">
+            MCR-Agent
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/CPEM">
+            CPEM
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered is-full-width">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:42px">
+          	Agent with the Big Picture: Perceiving Surroundings for Interactive Instruction Following
+          </h1>
+          <h1 class="title is-4 publication-title">
+            Embodied AI Workshop @ CVPR 2021
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://bhkim94.github.io">Byeonghwi Kim</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/suvaansh-bhambri-1784bab7/">Suvaansh Bhambri</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://kunalmessi10.github.io/">Kunal Pratap Singh</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://roozbehm.info/">Roozbeh Mottaghi</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ppolon.github.io">Jonghyun Choi</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>GIST, South Korea</span>,
+            <span class="author-block"><sup>2</sup>Allen Institute for AI</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://embodied-ai.org/papers/Agent-with-the-Big-Picture.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!--<span class="link-block">
+                <a href="https://arxiv.org/abs/2012.03208"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>-->
+              <!-- Video Link.
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src='static/figures/teaser.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:80%;max-width:80%">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Agent with the Big Picture (ABP)</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We address the interactive instruction following task which requires an agent to navigate through an environment, interact with objects, and complete long-horizon tasks, following natural language instructions with egocentric vision.
+              To successfully achieve a goal in the interactive instruction following task, the agent should infer a sequence of actions and object interactions.
+              When performing actions, a small field of view often limits the agent’s understanding of an environment, leading to poor performance.
+              Here, we propose to exploit surrounding views by additional observations from navigable directions to enlarge the field of view of the agent.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video.
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>-->
+      <!--/ Paper video. -->
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3">Perceiving Surroundings for Larger Field of View</h2>
+    <!--
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <div class="content has-text-justified">
+          <p>
+            dd
+          </p>
+        </div>
+      </div>
+      <div class="column is-two-quarter">
+        <img src='static/figures/cp.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:70%">
+      </div>
+    </div>
+    -->
+    <div class="content has-text-justified">
+      <p>
+        When performing actions, a small field of view often limits the agent’s understanding of an environment, leading to poor performance.
+        Here, we propose to exploit surrounding views by additional observations from navigable directions to enlarge the field of view of the agent.
+        For richer information, we additionally gather observations from four navigation directions (in this case, left, right, up, and down) including the egocentric image for each time step.
+      </p>
+      <p>
+        Our model is largely based on <span style="color: #305fac; font-weight:bold"><a href="https://bhkim94.github.io/projects/MOCA">MOCA</a></span> including factorizing perception and policy, language-guided dynamic filters, object-centric localization with instance association, and obstruction evasion.
+        For more details of the building components, please check out <span style="color: #305fac; font-weight:bold"><a href="https://bhkim94.github.io/projects/MOCA">MOCA</a></span>.
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-fullwidth">
+          <img src='static/figures/overview.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3">Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          We employ <span style="color: #305fac; font-weight:bold"><a href="https://askforalfred.com/">ALFRED</a></span> to evaluate our method.
+          There are three splits of environments in ALFRED: ‘train’, ‘validation’, and ‘test’.
+          The validation and test environments are further divided into two folds, seen and unseen, to assess the generalization capacity.
+          The primary metric is the success rate, denoted by ‘SR,’ which measures the percentage of completed tasks.
+          Another metric is the goal-condition success rate, denoted by ‘GC,’ which measures the percentage of satisfied goal conditions.
+          Finally, path-length-weighted (PLW) scores penalize SR and GC by the length of the actions that the agent takes.
+        </p>
+        <p>
+          The proposed method with surrounding perception outperforms the previous challenge winner [7] on all “Task” and “Goal-Cond” metrics in seen and unseen environments for both validation and test splits by large absolute margins.
+        </p>
+        <p>
+          For more details, please check out the <span style="color: #305fac; font-weight:bold"><a href="https://embodied-ai.org/papers/Agent-with-the-Big-Picture.pdf">paper</a></span>.
+        </p>
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <img src="static/tables/comparison_with_sota.png">
+              <h5>Comparison with State-of-the-Art</h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{kim2021agent,
+  author    = {Kim, Byeonghwi and Bhambri, Suvaansh and Singh, Kunal Pratap and Mottaghi, Roozbeh and Choi, Jonghyun},
+  title     = {Agent with the Big Picture: Perceiving Surroundings for Interactive Instruction Following},
+  booktitle = {Embodied AI Workshop @ CVPR 2021},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          The website template is from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

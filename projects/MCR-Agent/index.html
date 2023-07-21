@@ -63,11 +63,11 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="">
-            MOCA (Coming Soon)
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/MOCA">
+            MOCA
           </a>
-          <a class="navbar-item" href="">
-            ABP (Coming Soon)
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/ABP">
+            ABP
           </a>
           <a class="navbar-item" href="https://bhkim94.github.io/projects/MCR-Agent">
             MCR-Agent
@@ -96,13 +96,13 @@
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/suvaansh-bhambri-1784bab7/">Suvaansh Bhambri*</a>,
+              <a href="https://www.linkedin.com/in/suvaansh-bhambri-1784bab7/">Suvaansh Bhambri</a><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://bhkim94.github.io">Byeonghwi Kim*</a>,
+              <a href="https://bhkim94.github.io">Byeonghwi Kim</a><sup>*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://ppolon.github.io">Jonghyun Choi</a>,
+              <a href="https://ppolon.github.io">Jonghyun Choi</a>
             </span>
           </div>
 
@@ -195,7 +195,7 @@
               To address the challenge, we propose to divide and conquer it by breaking the task into multiple subgoals and attend to them individually for better navigation and interaction.
               We call it Multilevel Compositional Reasoning Agent (MCR-Agent).
               Specifically, we learn a three-level action policy. At the highest level, we infer a sequence of human-interpretable subgoals to be executed based on language instructions by a highlevel policy composition controller. At the middle level, we discriminatively control the agent’s navigation by a master policy by alternating between a navigation policy and various independent interaction policies.
-              Finally, at the lowest level, we infer manipulation actions with the corresponding object masks using the appropriate interaction policy. Our approach not only generates human interpretable subgoals but also achieves 2.03% absolute gain to comparable state of the arts in the efficiency metric (PLWSR in unseen set) without using rule-based planning or a semantic spatial memory
+              Finally, at the lowest level, we infer manipulation actions with the corresponding object masks using the appropriate interaction policy. Our approach not only generates human interpretable subgoals but also achieves 2.03% absolute gain to comparable state of the arts in the efficiency metric (PLWSR in unseen set) without using rule-based planning or a semantic spatial memory.
             </p>
           </div>
         </div>
@@ -309,7 +309,7 @@
       <div class="column is-two-quarters">
         <div class="content has-text-justified">
           <p>
-            Following <span style="color: #305fac; font-weight:bold"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Singh_Factorizing_Perception_and_Policy_for_Interactive_Instruction_Following_ICCV_2021_paper.pdf">MOCA</a></span>, we exploit separate streams for action prediction and object localization due to the contrasting nature of the two tasks.
+            Following <span style="color: #305fac; font-weight:bold"><a href="https://bhkim94.github.io/projects/MOCA">MOCA</a></span>, we exploit separate streams for action prediction and object localization due to the contrasting nature of the two tasks.
             Each interaction policy consists of an action policy module which is responsible for predicting the sequence of actions corresponding to the interaction subgoal, and an interaction perception module which generates the pixel-level object mask for objects that the agent needs to interact with at a particular time step.
           </p>
         </div>
@@ -382,10 +382,10 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{bhambri2023multi,
+    <pre><code>@inproceedings{bhambri2023multi,
   author    = {Bhambri, Suvaansh and Kim, Byeonghwi and Choi, Jonghyun},
   title     = {Multi-Level Compositional Reasoning for Interactive Instruction Following},
-  journal   = {AAAI},
+  booktitle = {AAAI},
   year      = {2023},
 }</code></pre>
   </div>
@@ -394,15 +394,6 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
