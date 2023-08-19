@@ -72,8 +72,8 @@
           <a class="navbar-item" href="https://bhkim94.github.io/projects/MCR-Agent">
             MCR-Agent
           </a>
-          <a class="navbar-item" href="https://bhkim94.github.io/projects/CPEM">
-            CPEM
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/CAPEAM">
+            CAPEAM
           </a>
         </div>
       </div>
@@ -184,7 +184,7 @@
       <br>
       <img src='static/figures/teaser.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:65%">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Context-aware Planning and Environment-aware Memory (CPEM)</span>
+        <span class="dnerf">Context-Aware Planning and Environment-Aware Memory (CAPEAM)</span>
       </h2>
     </div>
   </div>
@@ -201,24 +201,26 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Accomplishing household tasks such as ‘bringing a cup
-              of water’ requires planning step-by-step actions by maintaining knowledge about the spatial arrangement of objects
-              and the consequences of previous actions. Perception models of the current embodied AI agents, however, often make
-              mistakes due to a lack of such knowledge but rely on imperfect learning of imitating agents or an algorithmic planner
-              without knowledge about the changed environment by the
-              previous actions. To address the issue, we propose CPEM
-              (Context-aware Planner and Environment-aware Memory)
-              to incorporate the contextual information of previous
-              actions for planning and maintaining spatial arrangement
-              of objects with their states (e.g., if an object has been
-              moved or not) in an environment to the perception model
-              for improving both visual navigation and object interaction. We observe that CPEM achieves state-of-the-art task
-              success performance in various metrics using a challenging
-              interactive instruction following benchmark both in seen
-              and unseen environments by large margins (up to +10.70%
-              in unseen env.). CPEM with the templated actions, named
-ECLAIR, also won the generalist language grounding
-agents challenge at Embodied AI Workshop in CVPR’23.
+              Accomplishing household tasks requires to plan
+step-by-step actions considering the consequences of
+previous actions. However, the state-of-the-art em-
+bodied agents often make mistakes in navigating the
+environment and interacting with proper objects due to
+imperfect learning by imitating experts or algorithmic
+planners without such knowledge. To improve both vi-
+sual navigation and object interaction, we propose to
+consider the consequence of taken actions by <b>CAPEAM</b>
+(<b>Context-Aware Planning and Environment-Aware Memory</b>)
+that incorporates semantic context (e.g., appropriate ob-
+jects to interact with) in a sequence of actions, and the
+changed spatial arrangement and states of interacted
+objects (e.g., location that the object has been moved
+to) in inferring the subsequent actions. We empirically
+show that the agent with the proposed CAPEAM achieves
+state-of-the-art performance in various metrics using a
+challenging interactive instruction following benchmark in
+both seen and unseen environments by large margins (up to
++10.70% in unseen env.).
             </p>
           </div>
         </div>
@@ -244,7 +246,7 @@ agents challenge at Embodied AI Workshop in CVPR’23.
 
 <section class="section">
   <div class="container is-max-widescreen">
-    <h2 class="title is-3">Context-aware Planning and Environment-aware Memory</h2>
+    <h2 class="title is-3">Context-Aware Planning and Environment-Aware Memory</h2>
     <!--
     <div class="columns is-centered">
       <div class="column is-two-quarters">
@@ -261,8 +263,8 @@ agents challenge at Embodied AI Workshop in CVPR’23.
     -->
     <div class="content has-text-justified">
       <p>
-        Perception models of the current embodied AI agents, however, often make mistakes due to a lack of such knowledge but rely on imperfect learning of imitating agents or an algorithmic planner without knowledge about the changed environment by the previous actions.
-        To address the issue, we propose CPEM to incorporate <span style="font-weight:bold">the contextual information</span> of previous actions for planning and maintaining spatial arrangement of objects <span style="font-weight:bold">with their states</span> (e.g., if an object has been moved or not) in an environment to the perception model for improving both visual navigation and object interaction.
+        the state-of-the-art embodied agents often make mistakes in navigating the environment and interacting with proper objects due to imperfect learning by imitating experts or algorithmic planners without such knowledge.
+        To address the issue, we propose CAPEAM to incorporate <span style="font-weight:bold">the contextual information</span> of previous actions for planning and maintaining <span style="font-weight:bold">spatial arrangement of objects with their states</span> (e.g., if an object has been moved or not) in an environment to the perception model for improving both visual navigation and object interaction.
       </p>
       <div class="columns is-centered has-text-centered">
         <div class="column is-fullwidth">
@@ -272,13 +274,13 @@ agents challenge at Embodied AI Workshop in CVPR’23.
     </div>
 
 
-    <h3 class="title is-4">Context-aware Planning</h3>
+    <h3 class="title is-4">Context-Aware Planning</h3>
     <div class="columns is-centered">
       <div class="column is-two-quarters">
         <div class="content has-text-justified">
           <p>
             To plan a sequence of sub-goals conditioned on the task-relevant objects, we first define `context' as a set of task-relevant objects shared across sub-goals of a given task.
-            The proposed `context-aware planning' (CP) divides planning into two phases; 1) a <span style="font-weight:bold">sub-goal planner</span> which generates sub-goals, and 2) a <span style="font-weight:bold">detailed planner</span> which is responsible for a sequence of detailed actions and objects for interaction for each sub-goal.
+            The proposed `context-aware planning' (CAP) divides planning into two phases; 1) a <span style="font-weight:bold">sub-goal planner</span> which generates sub-goals, and 2) a <span style="font-weight:bold">detailed planner</span> which is responsible for a sequence of detailed actions and objects for interaction for each sub-goal.
           </p>
           <p>
             The sub-goal planner further comprises two sub-modules: the <span style="font-weight:bold">context predictor</span>, which predicts three task-relevant objects, and the <span style="font-weight:bold">sub-goal frame sequence generator</span>, which generates a sequence of sub-goals that do not rely on particular objects, referred to as sub-goal frames.
@@ -287,7 +289,7 @@ agents challenge at Embodied AI Workshop in CVPR’23.
         </div>
       </div>
       <div class="column is-two-quarter">
-        <img src='static/figures/cp.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+        <img src='static/figures/cap.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
       </div>
     </div>
     <!--
@@ -303,7 +305,7 @@ agents challenge at Embodied AI Workshop in CVPR’23.
     </div>
     -->
 
-    <h3 class="title is-4">Environment-aware Memory</h3>
+    <h3 class="title is-4">Environment-Aware Memory</h3>
     <div class="columns is-centered">
       <div class="column is-two-quarters">
         <div class="content has-text-justified">
@@ -325,7 +327,7 @@ agents challenge at Embodied AI Workshop in CVPR’23.
         </div>
       </div>
       <div class="column is-two-quarter">
-        <img src='static/figures/em.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+        <img src='static/figures/eam.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
       </div>
     </div>
     <!--
@@ -376,8 +378,8 @@ agents challenge at Embodied AI Workshop in CVPR’23.
 
           <div class="columns is-centered has-text-centered">
             <div class="column is-full-width">
-              <img src="static/figures/qualitative_cp.png" width="650">
-              <h5>Context-aware Planning</h5>
+              <img src="static/figures/qualitative_cap.png" width="650">
+              <h5>Context-Aware Planning</h5>
             </div>
           </div>
         </div>
