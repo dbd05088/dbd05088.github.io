@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Online Continual Learning for Interactive Instruction Following Agents">
+  <meta name="keywords" content="Embodied AI, Continual Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Continual Learning for Interactive Instruction Following Agents</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://bhkim94.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/CL-ALFRED">
+            CL-ALFRED
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/CAPEAM">
+            CAPEAM
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/MCR-Agent">
+            MCR-Agent
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/ABP">
+            ABP
+          </a>
+          <a class="navbar-item" href="https://bhkim94.github.io/projects/MOCA">
+            MOCA
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered is-full-width">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:45px">
+            Online Continual Learning for <br>
+            Interactive Instruction Following Agents
+          </h1>
+          <h1 class="title is-4 publication-title">
+            ICLR 2024
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://bhkim94.github.io">Byeonghwi Kim</a>*,
+            </span>
+            <span class="author-block">
+              <a href="">Minhyuk Seo</a>*,
+            </span>
+            <span class="author-block">
+              <a href="https://ppolon.github.io">Jonghyun Choi</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Yonsei University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (Coming Soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src='static/figures/cl-alfred.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">CL-ALFRED: Behavior-IL and Environment-IL Incremental Learning Setups</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In learning an embodied agent executing daily tasks via language directives, the literature largely assumes that the agent learns all training data at the beginning. We argue that such a learning scenario is less realistic since a robotic agent is supposed to learn the world continuously as it explores and perceives it. To take a step towards a more realistic embodied agent learning scenario, we propose two continual learning setups for embodied agents; <b>learning new behaviors (Behavior Incremental Learning, Behavior-IL)</b> and <b>new environments (Environment Incremental Learning, Environment-IL)</b>. For the tasks, previous ‘data prior’ based continual learning methods maintain logits for the past tasks. However, the stored information is often insufficiently learned information and requires task boundary information, which might not always be available. Here, we propose to update them based on confidence scores without task boundary information during training (i.e., task-free) in a moving average fashion, named <b>Confidence-Aware Moving Average (CAMA)</b>. In the proposed Behavior-IL and Environment-IL setups, our simple CAMA outperforms prior state of the art in our empirical validations by noticeable margins.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3">CL-ALFRED: Continual Learning Setups for Embodied Agents</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Continual learning enables agents to adapt to new behaviors and diverse environments after deployment, mitigating the risk of forgetting previously acquired knowledge.
+        To foster active research on mitigating catastrophic forgetting and comprehensively address the combined challenges of continuous learning of an agent with natural language understanding and object localization, we use full-fledged interactive instruction following tasks and propose two incremental learning setups, <b>Behavior Incremental Learning (Behavior-IL)</b> and <b>Environment Incremental Learning (Environment-IL)</b>.
+      </p>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <h3 class="title is-4">Behavior Incremental Learning (Behavior-IL)</h3>
+        <div class="content has-text-justified">
+          <p>
+            Behaviors described by instructions may exhibit considerable diversity as novel behaviors may arise over time. To address this scenario, we propose the <b>Behavior-IL</b> setup that facilitates the agent’s incremental learning of new behaviors while retaining knowledge obtained from previous tasks.
+          </p>
+          <p>
+            We adopt seven different types of behavior from <span style="color: #305fac"><a href="https://askforalfred.com/">ALFRED</a></span>: EXAMINE, HEAT, COOL, CLEAN, PICK&PLACE, PICK2&PLACE, and MOVABLE. For the agent's adaptability and avoid favoring particular behavior sequences, we train and evaluate agents using multiple randomly ordered behavior sequences.
+          </p>
+        </div>
+      </div>
+      <div class="column is-two-quarters">
+        <h3 class="title is-4" style="font-size:140%">Environment Incremental Learning (Environment-IL)</h3>
+        <div class="content has-text-justified">
+          <p>
+            The <b>Environment-IL</b> setup allows agents to incrementally learn novel environments. In the real world, agents often need to perform actions not only in the environment in which they were initially trained but also in new and different environments that are presented.
+          </p>
+          <p>
+            In this setup, we adopt four different types of environments supported by <span style="color: #305fac"><a href="https://ai2thor.allenai.org/">AI2-THOR</a></span>: KITCHENS, LIVINGROOMS, BEDROOMS, and BATHROOMS. Like the Behavior-IL setup, we conduct training and evaluation using multiple sequences of randomly ordered environments.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-3">CAMA: Confidence-Aware Moving Average</h2>
+    <div class="content has-text-justified">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-fullwidth">
+          <img src='static/figures/approach.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-two-quarters">
+          <div class="content has-text-justified">
+            <p>
+              To mitigate catastrophic forgetting, recent approaches use knowledge distillation with trained models or logits until past tasks, but this often entails significant memory and computational cost by additional model inference or outdated logit problems due to no updates on past logits.
+            </p>
+            <p>
+              To address this issue, we propose <b>CAMA (Confidence-Aware Moving Average)</b> to update the stored logits using the agent's confidence scores indicating how the newly obtained logits for update contain accurate knowledge of the corresponding tasks, as observed in the right figure.
+            </p>
+          </div>
+        </div>
+        <div class="column is-two-quarter">
+          <img src='static/figures/conf_acc.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:100%;max-width:100%">
+        </div>
+      </div>
+    </div>
+
+    <h3 class="title is-4">How to Update Logits?</h3>
+    <div class="columns is-centered">
+      <div class="column is-two-quarters">
+        <div class="content has-text-justified">
+          <p>
+            First, we construct an input batch, <span class="math display">\([x; x']\)</span>, by combining data from both the training data stream <span class="math display">\((x, y_a, y_c)\sim\mathcal{D}\)</span> and the episodic memory <span class="math display">\((x', y'_a, y'_c, z'_{old,a}, z'_{old,c})\sim\mathcal{M}\)</span>, where each <span class="math display">\(a \in \mathcal{A}\)</span> and <span class="math display">\(c \in \mathcal{C}\)</span> indicates an action and object class label from the action and object class sets, <span class="math display">\(\mathcal{A}\)</span> and <span class="math display">\(\mathcal{C}\)</span>, present in the input batch, <span class="math display">\([x; x']\)</span>.
+            Here, <span class="math display">\(x\)</span> represents the input (i.e., images and language directives), <span class="math display">\(y_a\)</span> and <span class="math display">\(y_c\)</span> denote the corresponding action and object class labels, and <span class="math display">\(z'_{old,a}\)</span> and <span class="math display">\(z'_{old,c}\)</span> refers to the corresponding stored logits.
+            <span class="math display">\(z_a\)</span>, <span class="math display">\(z_c\)</span>, <span class="math display">\(z'_a\)</span>, and <span class="math display">\(z'_c\)</span> denote the current model's logits for the input batch.
+          </p>
+          <p>
+            To prevent the logits maintained in the episodic memory from becoming outdated, we obtain the updated logits, <span class="math display">\(z'_{new,a}\)</span> and <span class="math display">\(z'_{new,c}\)</span>, by weighted-summing <span class="math display">\(z'_{old,a}\)</span> and <span class="math display">\(z'_{old,c}\)</span> with <span class="math display">\(z'_{a}\)</span> and <span class="math display">\(z'_{c}\)</span> using coefficient vectors, <span class="math display">\(\gamma_a\)</span> and <span class="math display">\(\gamma_c\)</span>, using Hadamard product, denoted by <span class="math display">\(\odot\)</span>:
+            \begin{equation}
+                \label{eq:weighted_sum}
+                z'_{new,a} = (\mathbf{1} - \gamma_a) \odot z'_{old,a} + \gamma_a \odot z'_a, ~~~
+                z'_{new,c} = (\mathbf{1} - \gamma_c) \odot z'_{new,c} + \gamma_c \odot z'_c.
+            \end{equation}
+          </p>
+            To obtain <span class="math display">\(\gamma_a\)</span> and <span class="math display">\(\gamma_c\)</span>, we first maintain the most recent <span class="math display">\(N\)</span> confidence scores for each action and object class label for <span class="math display">\(x\)</span>.
+            Then, to approximate the agent's proficiency in learning tasks over time, we compute the average of the scores associated with each action (<span class="math display">\(i\)</span>) and object class (<span class="math display">\(j\)</span>) label, denoted by <span class="math display">\(\bar{s}^a_i\)</span> and <span class="math display">\(\bar{s}^c_j\)</span>.
+            We then set each element of <span class="math display">\(\gamma_a\)</span> and <span class="math display">\(\gamma_c\)</span>, denoted by <span class="math display">\(\gamma_{a,i}\)</span> and <span class="math display">\(\gamma_{c,j}\)</span>, to <span class="math display">\(\bar{s}^a_i\)</span> and <span class="math display">\(\bar{s}^c_j\)</span> followed by a CLIP function as:
+            \begin{equation}
+                \label{eq:mean_confidence_score}
+                \begin{split}
+                    \gamma_{a,i} = \alpha_a \text{CLIP} \left( \bar{s}^a_i - |\mathcal{A}|^{-1}, 0, 1 \right), ~~~
+                    \gamma_{c,j} = \alpha_c \text{CLIP} \left( \bar{s}^c_j - |\mathcal{C}|^{-1}, 0, 1 \right),
+                \end{split}
+            \end{equation}
+            where <span class="math display">\(\text{CLIP}(x, \min, \max)\)</span> denotes the clip function that limits the value of <span class="math display">\(x\)</span> from <span class="math display">\(\min\)</span> to <span class="math display">\(\max\)</span>.
+            Here, the constants <span class="math display">\(\alpha_a < 1\)</span> and <span class="math display">\(\alpha_c < 1\)</span> are introduced to prevent <span class="math display">\(\gamma_{a,i}\)</span> and <span class="math display">\(\gamma_{c,j}\)</span> from reaching a value of 1 as this indicates complete replacement of the prior logits with the current logits, which implies that the updated logits would entirely forget the previously learned knowledge.
+            The inclusion of these constants ensures that some information from the past is retained and not entirely overridden by the current logits during the update process.
+            In addition, we subtract <span class="math display">\(|\mathcal{A}|^{-1}\)</span> and <span class="math display">\(|\mathcal{C}|^{-1}\)</span> enhances the effective utilization of confidence scores in comparison to a `random' selection, which would otherwise be realized by a uniform distribution.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3">Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          We follow the same evaluation protocol of <span style="color: #305fac"><a href="https://askforalfred.com/">ALFRED</a></span>.
+          The primary metric is the success rate (SR) which measures the ratio of the succeeded episodes among the total ones.
+          The second metric is the goal-condition success rate (GC) which measures the ratio of the satisfied goal conditions among the total ones.
+          Furthermore, we evaluated all agents in two splits of environments: <em>seen</em> and <em>unseen</em> environments which are/are not used to train agents.
+        <p>
+        </p>
+          To evaluate the last and intermediate performance of continual learning agents, we measure two variations of a metric, <span class="math display">\(A\)</span>: <span class="math display">\(A_{last}\)</span> and <span class="math display">\(A_{avg}\)</span>.
+          <span class="math display">\(A_{last}\)</span> (here, <span class="math display">\(\text{SR}_{last}\)</span> and <span class="math display">\(\text{GC}_{last}\)</span>) indicates the metric achieved by the agent that finishes its training for the final task.
+          <span class="math display">\(A_{avg}\)</span> (here, <span class="math display">\(\text{SR}_{avg}\)</span> and <span class="math display">\(\text{GC}_{avg}\)</span>) indicates the average of the metrics achieved by the agents that finish their training for each incremental task.
+        </p>
+        <p>
+          For more details, please check out the <span style="color: #305fac; font-weight:bold"><a href="">paper</a></span>.
+        </p>
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <img src="static/tables/comparison_with_sota.png">
+            <h5>Comparison with State of the Art (Validation Unseen)</h5>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <img src="static/figures/qualitative_behavior.png">
+            <h5>Qualitative Example of Behavior-IL</h5>
+          </div>
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <img src="static/figures/qualitative_environment.png">
+            <h5>Qualitative Example of Environment-IL</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{kim2024online,
+  author    = {Kim, Byeonghwi and Seo, Minhyuk and Choi, Jonghyun},
+  title     = {Online Continual Learning for Interactive Instruction Following Agents},
+  booktitle = {ICLR},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          The website template is from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
