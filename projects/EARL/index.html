@@ -166,9 +166,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src='static/figures/teaser.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:80%;max-width:80%">
+      <img src='static/figures/Approach.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:80%;max-width:80%">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Training Error Rate</span>
+        <span class="dnerf">Effect of EARL</span>
       </h2>
     </div>
   </div>
@@ -228,12 +228,21 @@
         <p>
           We compare the accuracy of the online continual learning methods, including EARL. 
           As shown in the table, EARL outperforms other baselines on all benchmarks (CIFAR-10/100, TinyImageNet, ImageNet-200), both in disjoint and Gaussian-scheduled setups by large absolute margins. 
-          In particular, high A_<sub>AUC</sub> suggests that EARL outperforms other methods for all the time that the data stream is provided to the model, which implies that it can be used for inference at anytime.
+          In particular, high A_<sub>AUC</sub> (area under the accuracy curve) suggests that EARL outperforms other methods for all the time that the data stream is provided to the model, which implies that it can be used for inference at anytime.
         </p>
         <p>
           For more details, please check out the <span style="color: #305fac; font-weight:bold"><a href="https://embodied-ai.org/papers/Agent-with-the-Big-Picture.pdf">paper</a></span>.
         </p>
         <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-full-width">
+              <img src="static/tables/comparison_with_sota.png">
+              <h5>Comparison with State of the Art</h5>
+            </div>
+          </div>
+        </div>
+
         <div class="columns is-centered has-text-centered">
           <div class="columns is-centered has-text-centered">
             <div class="column is-full-width">
