@@ -204,13 +204,13 @@
     <h2 class="title is-3">EARL: Equi-Angular Representation Learning</h2>
     <div class="content has-text-justified">
       <p>
-        When performing actions, a small field of view often limits the agent’s understanding of an environment, leading to poor performance.
-        Here, we propose to exploit surrounding views by additional observations from navigable directions to enlarge the field of view of the agent.
-        For richer information, we additionally gather observations from four navigation directions (in this case, left, right, up, and down) including the egocentric image for each time step.
+        Despite the success of the fixed ETF classifier in both the imbalanced training and offline CL, the ETF classifier has not yet been explored for online CL due to the necessity of sufficient training for neural collapse. 
+        To be specific, streamed data are trained only once in online CL, which makes it harder to induce neural collapse than in offline CL which supports multi-epoch training. 
       </p>
       <p>
-        Our model is largely based on <span style="color: #305fac; font-weight:bold"><a href="https://bhkim94.github.io/projects/MOCA">MOCA</a></span> including factorizing perception and policy, language-guided dynamic filters, object-centric localization with instance association, and obstruction evasion.
-        For more details of the building components, please check out <span style="color: #305fac; font-weight:bold"><a href="https://bhkim94.github.io/projects/MOCA">MOCA</a></span>.
+        To learn a better converged model without multi-epoch training for online CL, we propose two novel methods, each for the training phase and the inference phase, respectively. 
+        In the training phase, we accelerate convergence by proposing preparatory data training. 
+        In the inference phase, we propose to correct the remaining discrepancy between the classifiers and the features using residual correction.	
       </p>
       <div class="columns is-centered has-text-centered">
         <div class="column is-fullwidth">
