@@ -261,10 +261,9 @@
   </div>
 </section>
 
-
-<section class="hero is-light">
+<section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container is-max-widescreen">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Ablation Study</h2>
       <div class="content has-text-justified">
         <p>
@@ -282,7 +281,7 @@
 
         <p>
           For further analysis, we visualizes the cosine similarity between the output features of 50 randomly selected test set samples of novel class ‘4’ and the classifier vectors w<sub>i</sub>. 
-          In baseline (a), the features of the class 4 are strongly biased towards the classifier vectors of the old classes (i.e., w0 , w1 , w2 , w3 ), rather than the correct classifier, w4. 
+          In baseline (a), the features of the class 4 are strongly biased towards the classifier vectors of the old classes (i.e., w<sub>0</sub>, w<sub>1</sub>, w<sub>2</sub>, w<sub>3</sub>), rather than the correct classifier, w4. 
           (c) When residual correction is used, some samples show high similarity with w4 compared to the baseline. 
           However, since incorrect residuals can be added due to the bias problem, more samples have high similarity with w<sub>2</sub> than the baseline (i.e., wrong residuals are added). 
           (b) When using preparatory data training, the bias toward w0 and w1 classes significantly decreases compared to the baseline. 
