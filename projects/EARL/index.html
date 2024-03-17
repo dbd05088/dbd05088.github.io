@@ -172,10 +172,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <h2 class="title is-4 is-centered has-text-centered">🏆 2nd Place 🏆 &nbsp&nbsp&nbsp <a href="https://askforalfred.com/EAI21/">ALFRED Challenge (CVPRW'21)</a></h2>
       <img src='static/figures/teaser.png' style="margin-left: auto; margin-right: auto; display: block; border-style: none width:80%;max-width:80%">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Agent with the Big Picture (ABP)</span>
+        <span class="dnerf">Training Error Rate</span>
       </h2>
     </div>
   </div>
@@ -191,10 +190,10 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We address the interactive instruction following task which requires an agent to navigate through an environment, interact with objects, and complete long-horizon tasks, following natural language instructions with egocentric vision.
-              To successfully achieve a goal in the interactive instruction following task, the agent should infer a sequence of actions and object interactions.
-              When performing actions, a small field of view often limits the agent’s understanding of an environment, leading to poor performance.
-              Here, we propose to exploit surrounding views by additional observations from navigable directions to enlarge the field of view of the agent.
+              Online continual learning suffers from an underfitted solution due to insufficient training for prompt model update (e.g., single-epoch training). 
+              To address the challenge, we propose an efficient online continual learning method using the neural collapse phenomenon. 
+              In particular, we induce neural collapse to form a simplex equiangular tight frame (ETF) structure in the representation space so that the continuously learned model with a single epoch can better fit to the streamed data by proposing preparatory data training and residual correction in the representation space. 
+              With an extensive set of empirical validations using CIFAR-10/100, TinyImageNet, ImageNet-200, and ImageNet-1K, we show that our proposed method outperforms state-of- the-art methods by a noticeable margin in various online continual learning scenarios such as disjoint and Gaussian scheduled continuous (i.e., boundary-free) data setups.
             </p>
           </div>
         </div>
