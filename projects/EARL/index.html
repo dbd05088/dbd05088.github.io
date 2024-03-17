@@ -226,15 +226,9 @@
       <h2 class="title is-3">Results</h2>
       <div class="content has-text-justified">
         <p>
-          We employ <span style="color: #305fac; font-weight:bold"><a href="https://askforalfred.com/">ALFRED</a></span> to evaluate our method.
-          There are three splits of environments in ALFRED: ‘train’, ‘validation’, and ‘test’.
-          The validation and test environments are further divided into two folds, seen and unseen, to assess the generalization capacity.
-          The primary metric is the success rate, denoted by ‘SR,’ which measures the percentage of completed tasks.
-          Another metric is the goal-condition success rate, denoted by ‘GC,’ which measures the percentage of satisfied goal conditions.
-          Finally, path-length-weighted (PLW) scores penalize SR and GC by the length of the actions that the agent takes.
-        </p>
-        <p>
-          The proposed method with surrounding perception outperforms the previous challenge winner [7] on all “Task” and “Goal-Cond” metrics in seen and unseen environments for both validation and test splits by large absolute margins.
+          We compare the accuracy of the online continual learning methods, including EARL. 
+          As shown in the table, EARL outperforms other baselines on all benchmarks (CIFAR-10/100, TinyImageNet, ImageNet-200), both in disjoint and Gaussian-scheduled setups by large absolute margins. 
+          In particular, high A_<sub>AUC</sub> suggests that EARL outperforms other methods for all the time that the data stream is provided to the model, which implies that it can be used for inference at anytime.
         </p>
         <p>
           For more details, please check out the <span style="color: #305fac; font-weight:bold"><a href="https://embodied-ai.org/papers/Agent-with-the-Big-Picture.pdf">paper</a></span>.
