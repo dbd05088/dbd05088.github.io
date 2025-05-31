@@ -11,27 +11,30 @@
         display: block; 
         margin: -4em; 
     } 
-    .solution2 .timeline-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            max-width: 800px;
-        }
-        .solution2 .date-badge {
-            background-color: #dddddd;
-            color: #5f5d5d;
-            padding: 8px 12px;
-            font-weight: bold;
-            border-radius: 4px;
-            margin-right: 15px;
-            flex-shrink: 0;
-            min-width: 80px;
-            text-align: center;
-        }
-        .solution2 .content {
-            flex: 1;
-            text-align: justify;
-        }
+    /* 해결책 1: 테이블 너비 제한 */
+    .news-table {
+        width: 100%;
+        max-width: 800px;
+        border-collapse: collapse;
+        table-layout: fixed;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-table td {
+        padding: 15px;
+        vertical-align: top;
+        text-align: left;
+    }
+    .date-badge {
+        background-color: #dddddd;
+        color: #5f5d5d;
+        padding: 8px 12px;
+        font-weight: bold;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 15px;
+        white-space: nowrap;
+    }
   </style> 
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -73,88 +76,75 @@
           </tr>
         </tbody></table>
         <br>
-
-        <div class="solution solution2">
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp News</heading></td>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:-4px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
-          <!-- ################################################################################################################### -->
-          
-
+        
+        <table class="news-table"><tbody>
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-              &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2025.05</b> &nbsp </span></span> &nbsp Our workshop proposal (CLVISION: Continual Learning in Computer Vision) is accepted at ICCV 2025. I will serve as the Challenge Chair at ICCV 2025 @ CLVISION.
-
-
-              <br>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-              &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2025.04</b> &nbsp </span></span> &nbsp One paper on heterogeneous federated learning for MLLMs is accepted at the CVPRW 2025 @ MMFM.
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2025.05</span>
+              Our workshop proposal (CLVISION: Continual Learning in Computer Vision) is accepted at ICCV 2025. I will serve as the Challenge Chair at ICCV 2025 @ CLVISION.
             </td>
           </tr>
 
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-                &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2025.03</b> &nbsp </span></span> &nbsp I started as a Research Associate at KU Leuven under the supervision of Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2025.04</span>
+              One paper on heterogeneous federated learning for MLLMs is accepted at the CVPRW 2025 @ MMFM.
             </td>
           </tr>
 
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-                &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2025.01</b> &nbsp </span></span> &nbsp One paper on efficient continual learning is accepted at ICLR 2025 <b style="color:red;">(Spotlight Presentation)</b>
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2025.03</span>
+              I started as a Research Associate at KU Leuven under the supervision of Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
             </td>
           </tr>
+
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-                &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2024.09</b> &nbsp </span></span> &nbsp I am invited to give a talk in <a href="https://www.naverlabs.com/">Naver Labs</a> - Recent research on continual learning
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2025.01</span>
+              One paper on efficient continual learning is accepted at ICLR 2025 <b style="color:red;">(Spotlight Presentation)</b>
             </td>
           </tr>
+
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-                &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2024.06</b> &nbsp </span></span> &nbsp Two papers are accepted at CoLLAs 2024 Workshop Tack
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2024.09</span>
+              I am invited to give a talk in <a href="https://www.naverlabs.com/">Naver Labs</a> - Recent research on continual learning
             </td>
           </tr>
+
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-                &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2024.06</b> &nbsp </span></span> &nbsp I am invited to give a talk in <a href="https://machinelearning.apple.com/">Apple research</a> - Practical set‐ups and methods for continual learning
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2024.06</span>
+              Two papers are accepted at CoLLAs 2024 Workshop Tack
             </td>
           </tr>
+
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-              &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2024.02</b> &nbsp </span></span> &nbsp One paper on online continual learning is accepted at CVPR 2024 
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2024.06</span>
+              I am invited to give a talk in <a href="https://machinelearning.apple.com/">Apple research</a> - Practical set‐ups and methods for continual learning
             </td>
           </tr>
+
           <tr>
-            <td width="100%" valign="middle" align="justify">
-              <br> 
-              &nbsp&nbsp&nbsp <span style="background-color: #dddddd"><span style="color: #5f5d5d;"> &nbsp&nbsp <b>2024.01</b> &nbsp </span></span> &nbsp One paper on lifelong learning agent is accepted at ICLR 2024
-              <br>
+            <td style="text-align:justify">
+              <span class="date-badge">2024.02</span>
+              One paper on online continual learning is accepted at CVPR 2024
             </td>
           </tr>
-          <!-- ################################################################################################################### -->
+
+          <tr>
+            <td style="text-align:justify">
+              <span class="date-badge">2024.01</span>
+              One paper on lifelong learning agent is accepted at ICLR 2024
+            </td>
+          </tr>
         </tbody></table>
-        </div>
+
 
         <p></p>
         <p></p>
