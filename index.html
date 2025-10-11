@@ -11,12 +11,38 @@
         display: block; 
         margin: -4em; 
     } 
+    /* News: scrollable wrapper */
+    .news-scroller{
+      max-width: 800px;         /* 페이지 폭과 맞춤 */
+      max-height: 260px;        /* 원하는 높이로 조절 (예: 220~320px) */
+      margin: 0 auto;           /* 가운데 정렬 */
+      overflow-y: auto;         /* 세로 스크롤 */
+      border: 1px solid #eee;   /* 선택: 경계선 */
+      border-radius: 8px;       /* 선택: 둥근 모서리 */
+      -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
+      scrollbar-gutter: stable both-edges; /* 스크롤바 공간 안정화 */
+    }
+
+    .news-table{
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;      /* 긴 링크/문장 줄바꿈에 유리 */
+    }
+
+    .news-table td{
+      padding: 6px 14px;
+      vertical-align: top;
+      text-align: left;
+      word-break: break-word;   /* 너무 긴 단어 줄바꿈 */
+    }
+
+    .news-table tr + tr td{
+      border-top: 1px solid #f3f3f3; /* 항목 구분선 */
+    }
     /* 해결책 1: 테이블 너비 제한 */
-    .news-table {
+    /* .news-table {
         width: 100%;
         max-width: 800px;
-        max-height: 100px;          /* 표시 높이 제한 */
-        overflow-y: auto;           /* 스크롤바 자동 생성 */
         border-collapse: collapse;
         table-layout: fixed;
         margin-left: auto;
@@ -26,7 +52,7 @@
         padding: 4px 15px;
         vertical-align: top;
         text-align: left;
-    }
+    } */
     .date-badge {
         background-color: #dddddd;
         color: #5f5d5d;
@@ -82,7 +108,8 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp News</heading></td>
         </tbody></table>
-        
+
+        <div class="news-scroller" aria-label="News list" tabindex="0">
         <table class="news-table"><tbody>
           <tr>
             <td style="text-align:justify">
@@ -158,7 +185,7 @@
             </td>
           </tr>
         </tbody></table>
-
+      </div>
 
         <p></p>
         <p></p>
