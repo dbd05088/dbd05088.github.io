@@ -20,7 +20,14 @@
       -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
       scrollbar-gutter: stable both-edges; /* 스크롤바 공간 안정화 */
     }
-
+    ul.interests{
+      text-align: left;
+      margin: 0.5em 0 0 1.2em;  /* 왼쪽 들여쓰기 */
+      padding: 0;
+    }
+    ul.interests li{
+      text-align: left;
+    }
     .news-table{
       width: 100%;
       border-collapse: collapse;
@@ -80,7 +87,8 @@
               <p style="text-align:justify">
                 My research focuses on human-like AI, inspired by how humans learn and evolve over time. 
                 Specifically, as humans continually acquire knowledge and evolve through interaction with others, I am interested in:
-              <ul>
+              </p>
+              <ul class="interests">
                 <li>
                   continual learning, which enables models to continuously expand their knowledge over time
                 </li>
@@ -88,7 +96,7 @@
                   collaborative learning, which allows models to share knowledge with one another, thereby improving generalization
                 </li>
               </ul>
-              </p>
+
               <p style="text-align:justify">
                 During my M.S., I was fortunate to work as a research intern at the Advanced Machine Learning team in <a href="https://www.lgresearch.ai" target="_new">LG AI research</a> (2023).
                 <!-- <b>Currently, I am looking for a research internship position for machine learning and computer vision research.</b> -->
