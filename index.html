@@ -1,1928 +1,1372 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <title>
+   Minhyuk Seo
+  </title>
+  <meta content="Minhyuk Seo" name="author"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <style type="text/css">
+   :root {
+  --bg:#fff;
+  --surface:#f7f9fc;
+  --text:#1f2937;
+  --muted:#667085;
+  --border:#e5e7eb;
+  --accent:#003262;
+  --accent-soft:#eaf1f8;
+  --max:1040px;
+}
 
-<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<title>Minhyuk Seo</title>
-<meta content="Minhyuk Seo" name="author"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<style type="text/css">
-:root{--bg:#fff;--surface:#f7f9fc;--text:#1f2937;--muted:#667085;--border:#e5e7eb;--accent:#003262;--accent-soft:#eaf1f8;--max:1040px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15.5px;line-height:1.65}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}body>table{max-width:var(--max)!important;padding:0 24px}name{font-size:38px!important;font-weight:750;letter-spacing:-.035em;color:#111827}heading{display:block;font-size:24px!important;font-weight:750;letter-spacing:-.025em;color:#111827;margin:8px 0 14px}p{margin:0 0 14px}
-.top-nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(229,231,235,.9);margin:0 calc(50% - 50vw) 28px;padding:0 max(24px,calc((100vw - var(--max))/2))}.top-nav-inner{height:58px;display:flex;align-items:center;justify-content:space-between;gap:24px}.top-nav .brand{font-weight:750;color:#111827;letter-spacing:-.02em}.top-nav .links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}.top-nav .links a{color:#475467}.top-nav .links a:hover{color:var(--accent);text-decoration:none}
-.hero-table{width:100%!important;text-align:left!important}.hero-copy{padding-right:36px!important}.hero-copy p{text-align:left!important}.hero-subtitle{font-size:18px;color:#344054;margin-top:-4px;margin-bottom:18px}.hero-links{text-align:left!important;margin-top:18px}.hero-links a{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 11px;background:#fff;color:#344054;font-size:14px;font-weight:600;margin:0 7px 7px 0}.hero-links a:hover{background:var(--surface);text-decoration:none}.hero-photo img{width:210px!important;max-width:210px!important;aspect-ratio:1/1;object-fit:cover;border-radius:22px;box-shadow:0 10px 30px rgba(15,23,42,.10)}.research-tags{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 8px}.research-tag{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 10px;font-size:13px;font-weight:650}
-.section-block{margin-top:46px;scroll-margin-top:82px}.section-rule{width:46px;height:3px;border-radius:99px;background:var(--accent);margin:-8px 0 20px}.news-scroller{max-width:100%!important;max-height:none!important;overflow:visible!important;margin:0!important}.news-table{width:100%;border-collapse:separate!important;border-spacing:0 8px!important}.news-table td{padding:11px 14px!important;background:var(--surface);border:1px solid var(--border);border-radius:12px;text-align:left!important}.date-badge{background:var(--accent-soft)!important;color:var(--accent)!important;padding:4px 8px!important;border-radius:999px!important;font-size:12px!important;margin-right:10px!important}
-.experience-table{border-spacing:0 10px!important}.experience-table td{padding-top:14px!important;padding-bottom:14px!important}.experience-table img{max-height:54px;object-fit:contain}.publications-table{border-spacing:0 18px!important}.publications-table>tbody>tr>td{padding:14px!important;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.publications-table>tbody>tr>td:first-child{border-left:1px solid var(--border);border-radius:14px 0 0 14px}.publications-table>tbody>tr>td:last-child{border-right:1px solid var(--border);border-radius:0 14px 14px 0}.publications-table img{border-radius:10px;display:block}papertitle{font-size:17px!important;font-weight:750!important;line-height:1.35;color:#111827}ul{padding-left:22px}li{margin:6px 0}.footer-note{color:var(--muted);font-size:13px}
-@media(max-width:760px){body>table{padding:0 16px}.top-nav{padding:0 16px;margin-bottom:18px}.top-nav .links{display:none}.hero-table,.hero-table tbody,.hero-table tr,.hero-table td{display:block!important;width:100%!important}.hero-copy{padding-right:0!important}.hero-photo{text-align:left!important;margin-top:22px}.hero-photo img{width:170px!important;max-width:170px!important}name{font-size:32px!important}heading{font-size:22px!important}.publications-table,.publications-table tbody,.publications-table tr,.publications-table td{display:block!important;width:100%!important}.publications-table>tbody>tr{margin-bottom:18px}.publications-table>tbody>tr>td{border:1px solid var(--border)!important;border-radius:12px!important}.publications-table>tbody>tr>td:first-child{border-bottom:0!important;border-radius:12px 12px 0 0!important}.publications-table>tbody>tr>td:last-child{border-radius:0 0 12px 12px!important}.publications-table img{width:100%!important;max-width:100%!important}}
-</style>
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-<link href="images/seal_icon.png" rel="icon" type="image/png"/>
-</head>
-<body><nav class="top-nav"><div class="top-nav-inner"><a class="brand" href="#top">Minhyuk Seo</a><div class="links"><a href="#news">News</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#awards">Awards</a><a href="#service">Service</a><a href="personal/CV.pdf">CV</a></div></div></nav>
-<table id="top" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr style="padding:0px">
-<td style="padding:0px">
-<table class="hero-table" style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:center"><tbody>
-<tr style="padding:-5px">
-<td class="hero-copy" style="padding:0%;width:63%;vertical-align:middle">
-<p style="text-align:center">
-<name>Minhyuk Seo</name>
-</p><div class="hero-subtitle">Computer Science Ph.D. Student · UC Berkeley EECS</div>
-<p style="text-align:justify">
-<!-- I am a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
-                I'm a Computer Science Ph.D. student in the Department of Electrical Engineering and Computer Sciences (EECS) at UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~jegonzal/" target="_new">Prof. Joseph E. Gonzalez</a>.
-              </p>
-<p style="text-align:justify"></p>
-                Before joining UC Berkeley, I was a Research Associate at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, where I worked with <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Prof. Tinne Tuytelaars</a>. I earned my M.S. and B.S. degrees in Computer Science from <a href="https://www.yonsei.ac.kr/sites/en_sc/index.do" target="_new">Yonsei University</a>, advised by <a href="http://ppolon.github.io/" target="_new">Prof. Jonghyun Choi</a>.
-                During my M.S., I was fortunate to work as a research intern with the Advanced Machine Learning team at <a href="https://www.lgresearch.ai" target="_new">LG AI Research</a> in 2023.
-                <!-- , currently a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
+* {
+  box-sizing:border-box;
+}
 
-<p style="text-align:justify">
-                My research focuses on human-like AI, inspired by how humans learn and evolve. 
+html {
+  scroll-behavior:smooth;
+}
+
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15.5px;
+  line-height:1.65;
+}
+
+a {
+  color:var(--accent);
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+body>table {
+  max-width:var(--max)!important;
+  padding:0 24px;
+}
+
+name {
+  font-size:38px!important;
+  font-weight:750;
+  letter-spacing:-.035em;
+  color:#111827;
+}
+
+heading {
+  display:block;
+  font-size:24px!important;
+  font-weight:750;
+  letter-spacing:-.025em;
+  color:#111827;
+  margin:8px 0 14px;
+}
+
+p {
+  margin:0 0 14px;
+}
+
+.top-nav {
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(229,231,235,.9);
+  margin:0 calc(50% - 50vw) 28px;
+  padding:0 max(24px,calc((100vw - var(--max))/2));
+}
+
+.top-nav-inner {
+  height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+
+.top-nav .brand {
+  font-weight:750;
+  color:#111827;
+  letter-spacing:-.02em;
+}
+
+.top-nav .links {
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  font-size:14px;
+}
+
+.top-nav .links a {
+  color:#475467;
+}
+
+.top-nav .links a:hover {
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.hero-table {
+  width:100%!important;
+  text-align:left!important;
+}
+
+.hero-copy {
+  padding-right:36px!important;
+}
+
+.hero-copy p {
+  text-align:left!important;
+}
+
+.hero-subtitle {
+  font-size:18px;
+  color:#344054;
+  margin-top:-4px;
+  margin-bottom:18px;
+}
+
+.hero-links {
+  text-align:left!important;
+  margin-top:18px;
+}
+
+.hero-links a {
+  display:inline-block;
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:6px 11px;
+  background:#fff;
+  color:#344054;
+  font-size:14px;
+  font-weight:600;
+  margin:0 7px 7px 0;
+}
+
+.hero-links a:hover {
+  background:var(--surface);
+  text-decoration:none;
+}
+
+.hero-photo img {
+  width:210px!important;
+  max-width:210px!important;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:22px;
+  box-shadow:0 10px 30px rgba(15,23,42,.10);
+}
+
+.research-tags {
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:10px 0 8px;
+}
+
+.research-tag {
+  background:var(--accent-soft);
+  color:var(--accent);
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:13px;
+  font-weight:650;
+}
+
+.section-block {
+  margin-top:46px;
+  scroll-margin-top:82px;
+}
+
+.section-rule {
+  width:46px;
+  height:3px;
+  border-radius:99px;
+  background:var(--accent);
+  margin:-8px 0 20px;
+}
+
+.news-scroller {
+  max-width:100%!important;
+  max-height:285px!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  margin:0!important;
+  padding-right:8px;
+  scrollbar-gutter:stable;
+}
+
+.news-table {
+  width:100%;
+  border-collapse:separate!important;
+  border-spacing:0 8px!important;
+}
+
+.news-table td {
+  padding:11px 14px!important;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  text-align:left!important;
+}
+
+.date-badge {
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+  padding:4px 8px!important;
+  border-radius:999px!important;
+  font-size:12px!important;
+  margin-right:10px!important;
+}
+
+.experience-table {
+  border-spacing:0 10px!important;
+}
+
+.experience-table td {
+  padding-top:14px!important;
+  padding-bottom:14px!important;
+}
+
+.experience-table img {
+  max-height:54px;
+  object-fit:contain;
+}
+
+.publications-table {
+  border-spacing:0 18px!important;
+}
+
+.publications-table>tbody>tr>td {
+  padding:14px!important;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+
+.publications-table>tbody>tr>td:first-child {
+  border-left:1px solid var(--border);
+  border-radius:14px 0 0 14px;
+}
+
+.publications-table>tbody>tr>td:last-child {
+  border-right:1px solid var(--border);
+  border-radius:0 14px 14px 0;
+}
+
+.publications-table img {
+  border-radius:10px;
+  display:block;
+}
+
+papertitle {
+  font-size:17px!important;
+  font-weight:750!important;
+  line-height:1.35;
+  color:#111827;
+}
+
+ul {
+  padding-left:22px;
+}
+
+li {
+  margin:6px 0;
+}
+
+.footer-note {
+  color:var(--muted);
+  font-size:13px;
+}
+
+@media(max-width:760px) {
+  body>table {
+    padding:0 16px;
+  }
+
+  .top-nav {
+    padding:0 16px;
+    margin-bottom:18px;
+  }
+
+  .top-nav .links {
+    display:none;
+  }
+
+  .hero-table,.hero-table tbody,.hero-table tr,.hero-table td {
+    display:block!important;
+    width:100%!important;
+  }
+
+  .hero-copy {
+    padding-right:0!important;
+  }
+
+  .hero-photo {
+    text-align:left!important;
+    margin-top:22px;
+  }
+
+  .hero-photo img {
+    width:170px!important;
+    max-width:170px!important;
+  }
+
+  name {
+    font-size:32px!important;
+  }
+
+  heading {
+    font-size:22px!important;
+  }
+
+  .publications-table,.publications-table tbody,.publications-table tr,.publications-table td {
+    display:block!important;
+    width:100%!important;
+  }
+
+  .publications-table>tbody>tr {
+    margin-bottom:18px;
+  }
+
+  .publications-table>tbody>tr>td {
+    border:1px solid var(--border)!important;
+    border-radius:12px!important;
+  }
+
+  .publications-table>tbody>tr>td:first-child {
+    border-bottom:0!important;
+    border-radius:12px 12px 0 0!important;
+  }
+
+  .publications-table>tbody>tr>td:last-child {
+    border-radius:0 0 12px 12px!important;
+  }
+
+  .publications-table img {
+    width:100%!important;
+    max-width:100%!important;
+  }
+
+}
+
+.news-scroller::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-scroller::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.news-scroller::-webkit-scrollbar-thumb:hover {
+  background: #98a2b3;
+}
+  </style>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <link href="images/seal_icon.png" rel="icon" type="image/png"/>
+ </head>
+ <body>
+  <nav class="top-nav">
+   <div class="top-nav-inner">
+    <a class="brand" href="#top">
+     Minhyuk Seo
+    </a>
+    <div class="links">
+     <a href="#news">
+      News
+     </a>
+     <a href="#experience">
+      Experience
+     </a>
+     <a href="#publications">
+      Publications
+     </a>
+     <a href="#awards">
+      Awards
+     </a>
+     <a href="#service">
+      Service
+     </a>
+     <a href="personal/CV.pdf">
+      CV
+     </a>
+    </div>
+   </div>
+  </nav>
+  <table id="top" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+   <tbody>
+    <tr style="padding:0px">
+     <td style="padding:0px">
+      <table class="hero-table" style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:center">
+       <tbody>
+        <tr style="padding:-5px">
+         <td class="hero-copy" style="padding:0%;width:63%;vertical-align:middle">
+          <p style="text-align:center">
+           <name>
+            Minhyuk Seo
+           </name>
+          </p>
+          <div class="hero-subtitle">
+           Computer Science Ph.D. Student &middot; UC Berkeley EECS
+          </div>
+          <p style="text-align:justify">
+           <!-- I am a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
+           I'm a Computer Science Ph.D. student in the Department of Electrical Engineering and Computer Sciences (EECS) at UC Berkeley, advised by
+           <a href="https://people.eecs.berkeley.edu/~jegonzal/" target="_new">
+            Prof. Joseph E. Gonzalez
+           </a>
+           .
+          </p>
+          <p style="text-align:justify">
+          </p>
+          Before joining UC Berkeley, I was a Research Associate at
+          <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">
+           KU Leuven
+          </a>
+          , where I worked with
+          <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
+           Prof. Tinne Tuytelaars
+          </a>
+          . I earned my M.S. and B.S. degrees in Computer Science from
+          <a href="https://www.yonsei.ac.kr/sites/en_sc/index.do" target="_new">
+           Yonsei University
+          </a>
+          , advised by
+          <a href="http://ppolon.github.io/" target="_new">
+           Prof. Jonghyun Choi
+          </a>
+          .
+                During my M.S., I was fortunate to work as a research intern with the Advanced Machine Learning team at
+          <a href="https://www.lgresearch.ai" target="_new">
+           LG AI Research
+          </a>
+          in 2023.
+          <!-- , currently a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
+          <p style="text-align:justify">
+           My research focuses on human-like AI, inspired by how humans learn and evolve. 
                 In particular, I focus on (i) continual learning and (ii) collaborative learning, with the goal of enabling human-like learning that continually acquires knowledge over time and evolves through interaction with others.
-                <!-- Specifically, as humans continually acquire knowledge and evolve through interaction with others, I am interested in (i) Continual learning, and (ii) Collaborative learning. -->
-</p><div class="research-tags"><span class="research-tag">Continual Learning</span><span class="research-tag">Collaborative Learning</span><span class="research-tag">Multimodal AI</span></div>
-<!-- 
+           <!-- Specifically, as humans continually acquire knowledge and evolve through interaction with others, I am interested in (i) Continual learning, and (ii) Collaborative learning. -->
+          </p>
+          <div class="research-tags">
+           <span class="research-tag">
+            Continual Learning
+           </span>
+           <span class="research-tag">
+            Collaborative Learning
+           </span>
+           <span class="research-tag">
+            Multimodal AI
+           </span>
+          </div>
+          <!-- 
               <p style="text-align:justify">
                 I received my M.S. degree in Computer Science at Yonsei University under the supervision of Prof. <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a> and B.S. degree in Computer Science from the same university.
                 During my M.S., I was fortunate to work as a research intern at the Advanced Machine Learning team in <a href="https://www.lgresearch.ai" target="_new">LG AI research</a> (2023).
               </p> -->
-<p class="hero-links" style="text-align:center">
-<a href="personal/CV.pdf" target="_new">CV</a>  / 
-                <a href="https://www.notion.so/Portfolio-2ca74e981cb480fab696cf0066f3954a?source=copy_link" target="_new">Portfolio</a>  / 
-                <a href="mailto:minhyukseo@yonsei.ac.kr">Email</a>  / 
-                <a href="https://www.linkedin.com/in/minhyuk-seo-59ba11247/">Linkedin</a>  / 
-                <a href="https://scholar.google.com/citations?user=ayDPR-gAAAAJ&amp;hl=ko&amp;authuser=1" target="_new">Google Scholar</a>  / 
-                <a href="https://dblp.org/pid/350/4104.html" target="_new">DBLP</a>  / 
-                <a href="https://github.com/dbd05088/" target="_new">Github</a>
-</p>
-</td>
-<!-- <td style="padding:0%;width:28%;vertical-align:top; text-align:right;">
+          <p class="hero-links" style="text-align:center">
+           <a href="personal/CV.pdf" target="_new">
+            CV
+           </a>
+           &nbsp;/&nbsp;
+           <a href="https://www.notion.so/Portfolio-2ca74e981cb480fab696cf0066f3954a?source=copy_link" target="_new">
+            Portfolio
+           </a>
+           &nbsp;/&nbsp;
+           <a href="mailto:minhyukseo@yonsei.ac.kr">
+            Email
+           </a>
+           &nbsp;/&nbsp;
+           <a href="https://www.linkedin.com/in/minhyuk-seo-59ba11247/">
+            Linkedin
+           </a>
+           &nbsp;/&nbsp;
+           <a href="https://scholar.google.com/citations?user=ayDPR-gAAAAJ&amp;hl=ko&amp;authuser=1" target="_new">
+            Google Scholar
+           </a>
+           &nbsp;/&nbsp;
+           <a href="https://dblp.org/pid/350/4104.html" target="_new">
+            DBLP
+           </a>
+           &nbsp;/&nbsp;
+           <a href="https://github.com/dbd05088/" target="_new">
+            Github
+           </a>
+          </p>
+         </td>
+         <!-- <td style="padding:0%;width:28%;vertical-align:top; text-align:right;">
               <img style="width:70%;max-width:180px; margin-top:30px;"
                    alt="profile photo"
                    src="personal/me.jpg">
             </td> -->
-<td class="hero-photo" style="padding:0%;width:28%;max-width:40%">
-<img alt="profile photo" class="hoverZoomLink" src="personal/me.jpg" style="width:70%;max-width:100%"/>
-</td>
-</tr>
-</tbody></table>
-<br/>
-<table class="section-block" id="news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<td style="padding:0px;width:100%;vertical-align:middle"><heading>    News</heading></td>
-</tbody></table><div class="section-rule"></div>
-<!-- I received CVPR 2022 Outstanding Reviewer Award -->
-<div aria-label="News list" class="news-scroller" tabindex="0">
-<table class="news-table"><tbody>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2026.06</span>
-              Our <a href="https://arxiv.org/pdf/2510.13698">MoRAS</a> paper was accepted to ECCV 2026.
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2026.05</span>
-              I recieved ICML 2026 Gold Reviewer Award.
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2026.04</span>
-              Our <a href="https://arxiv.org/pdf/2506.02011">OASIS</a> paper was accepted to ACL 2026 (main).
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2026.01</span>
-              Our <a href="https://openreview.net/pdf?id=0g5Dk4Qfh0">Co-LoRA</a> paper recieved <b style="color:red;">Best Paper Award</b> at <a href="https://personalizedllm.github.io/events/perfm-aaai26/">AAAI 2026 workshop of PerFM</a>.
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2026.01</span>
-              Our <a href="https://openreview.net/pdf?id=0g5Dk4Qfh0">Co-LoRA</a> paper was accepted to ICLR 2026.
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2025.12</span>
-              I am invited to give a talk at <a href="https://agenticlearning.ai/">NYU Agentic Learning AI Lab</a> - Human-like AI
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2025.09</span>
-              Our <a href="https://openreview.net/pdf?id=QPfVoTMLWq">GenOL</a> paper was accepted to TMLR 2025.
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2025.07</span>
-              I am invited to give a talk at <a href="https://visualai.princeton.edu/">Princeton Visual AI Lab</a> - Toward Efficient Training of MLLMs
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2025.05</span>
-              Our workshop proposal (CLVISION: Continual Learning in Computer Vision) was accepted to ICCV 2025. I will serve as an Challenge Chair in <a href="https://sites.google.com/view/clvision2025/overview?authuser=0" target="_new">ICCV 2025 @ CLVISION</a>.
-            </td>
-</tr>
-<!-- <tr>
+         <td class="hero-photo" style="padding:0%;width:28%;max-width:40%">
+          <img alt="profile photo" class="hoverZoomLink" src="personal/me.jpg" style="width:70%;max-width:100%"/>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <br/>
+      <table class="section-block" id="news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tbody>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+         <heading>
+          &nbsp;&nbsp;&nbsp; News
+         </heading>
+        </td>
+       </tbody>
+      </table>
+      <div class="section-rule">
+      </div>
+      <!-- I received CVPR 2022 Outstanding Reviewer Award -->
+      <div aria-label="News list" class="news-scroller" tabindex="0">
+       <table class="news-table">
+        <tbody>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2026.06
+           </span>
+           Our
+           <a href="https://arxiv.org/pdf/2510.13698">
+            MoRAS
+           </a>
+           paper was accepted to ECCV 2026.
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2026.05
+           </span>
+           I recieved ICML 2026 Gold Reviewer Award.
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2026.04
+           </span>
+           Our
+           <a href="https://arxiv.org/pdf/2506.02011">
+            OASIS
+           </a>
+           paper was accepted to ACL 2026 (main).
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2026.01
+           </span>
+           Our
+           <a href="https://openreview.net/pdf?id=0g5Dk4Qfh0">
+            Co-LoRA
+           </a>
+           paper recieved
+           <b style="color:red;">
+            Best Paper Award
+           </b>
+           at
+           <a href="https://personalizedllm.github.io/events/perfm-aaai26/">
+            AAAI 2026 workshop of PerFM
+           </a>
+           .
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2026.01
+           </span>
+           Our
+           <a href="https://openreview.net/pdf?id=0g5Dk4Qfh0">
+            Co-LoRA
+           </a>
+           paper was accepted to ICLR 2026.
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2025.12
+           </span>
+           I am invited to give a talk at
+           <a href="https://agenticlearning.ai/">
+            NYU Agentic Learning AI Lab
+           </a>
+           - Human-like AI
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2025.09
+           </span>
+           Our
+           <a href="https://openreview.net/pdf?id=QPfVoTMLWq">
+            GenOL
+           </a>
+           paper was accepted to TMLR 2025.
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2025.07
+           </span>
+           I am invited to give a talk at
+           <a href="https://visualai.princeton.edu/">
+            Princeton Visual AI Lab
+           </a>
+           - Toward Efficient Training of MLLMs
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2025.05
+           </span>
+           Our workshop proposal (CLVISION: Continual Learning in Computer Vision) was accepted to ICCV 2025. I will serve as an Challenge Chair in
+           <a href="https://sites.google.com/view/clvision2025/overview?authuser=0" target="_new">
+            ICCV 2025 @ CLVISION
+           </a>
+           .
+          </td>
+         </tr>
+         <!-- <tr>
             <td style="text-align:justify">
               <span class="date-badge">2025.04</span>
               One paper on heterogeneous federated learning for MLLMs accepted to <a href="https://sites.google.com/view/mmfm3rdworkshop/home" target="_new">CVPRW 2025 @ MMFM</a>.
             </td>
           </tr> -->
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2025.03</span>
-              I started as a Research Associate at KU Leuven under the supervision of Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
-</td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2025.01</span>
-              Our <a href="https://openreview.net/forum?id=dOAkHmsjRX">aL-SAR</a> paper was accepted to ICLR 2025 <b style="color:red;">(Spotlight Presentation)</b>
-<!-- on efficient continual learning -->
-</td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2024.09</span>
-              I am invited to give a talk at <a href="https://www.naverlabs.com/">Naver Labs</a> - Recent research on continual learning
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2024.06</span>
-              Two papers accepted to CoLLAs 2024 Workshop Track
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2024.06</span>
-              I am invited to give a talk at <a href="https://machinelearning.apple.com/">Apple research</a> - Practical set‑ups and methods for continual learning
-            </td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2024.02</span>
-              Our <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Seo_Learning_Equi-angular_Representations_for_Online_Continual_Learning_CVPR_2024_paper.pdf">EARL</a> paper was accepted to CVPR 2024
-              <!-- on online continual learning  -->
-</td>
-</tr>
-<tr>
-<td style="text-align:justify">
-<span class="date-badge">2024.01</span>
-              Our <a href="https://bhkim94.github.io/projects/CL-ALFRED/">CL-ALFRED</a> paper was accepted to ICLR 2024
-              <!-- on lifelong learning agent  -->
-</td>
-</tr>
-</tbody></table>
-</div>
-<p></p>
-<p></p>
-<br/>
-<table class="section-block" id="experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<tbody>
-<td style="padding:0px;width:100%;vertical-align:middle"><heading>    Work Experience</heading></td>
-</tbody>
-</table><div class="section-rule"></div>
-<p></p>
-<table class="experience-table" style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:justify;">
-<tbody>
-<!-- KU Leuven -->
-<tr style="height: 15px;"></tr> <!-- 간격 추가 -->
-<tr>
-<td align="center" style="padding:10px;width:25%;vertical-align:middle">
-<img src="work_experiences/KULeuven/logo.png" style="border-style: none; width:50%; max-width:50%;"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<papertitle>
-<a href="https://www.kuleuven.be/english/kuleuven/index.html">KU Leuven</a>
-</papertitle>
-<br/>
-                Researcher at <a href="https://www.esat.kuleuven.be/psi">ESAT-PSI Lab</a> (Mar. 2025 ~ Jul. 2026)
-                <br/>
-                Advisor: Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
-</td>
-</tr>
-<tr style="height: 20px;"></tr> <!-- 간격 추가 -->
-<!-- 서울대학교 -->
-<tr>
-<td align="center" style="padding:10px;width:25%;vertical-align:middle">
-<img src="work_experiences/SNU/logo.png" style="border-style: none; width:35%; max-width:35%;"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<papertitle>
-<a href="https://en.snu.ac.kr/index.html">Seoul National University</a>
-</papertitle>
-<br/>
-                Researcher at <a href="https://snumprlab.github.io/">SNUMPR Lab</a> (Sep. 2024 ~ Feb. 2025)
-                <br/>
-                Advisor: Prof. <a href="http://ppolon.github.io/">Jonghyun Choi</a>
-</td>
-</tr>
-<tr style="height: 20px;"></tr> <!-- 간격 추가 -->
-<!-- LG AI Research -->
-<tr>
-<td align="center" style="padding:10px;width:25%;vertical-align:middle">
-<img src="work_experiences/LGAIReasearch/logo.png" style="border-style: none; width:70%; max-width:70%;"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<papertitle>
-<a href="https://www.lgresearch.ai">LG AI Research</a>
-</papertitle>
-<br/>
-                Research Intern at <a href="https://www.lgresearch.ai">AML Team</a> (Feb. 2023 ~ Aug. 2023)
-                <br/>
-                Mentor: Dr. <a href="https://hankook.github.io/">Hankook Lee</a>
-</td>
-</tr>
-<tr style="height: 20px;"></tr> <!-- 간격 추가 -->
-</tbody>
-</table>
-<p></p>
-<p></p>
-<!-- <br>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2025.03
+           </span>
+           I started as a Research Associate at KU Leuven under the supervision of Prof.
+           <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
+            Tinne Tuytelaars
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2025.01
+           </span>
+           Our
+           <a href="https://openreview.net/forum?id=dOAkHmsjRX">
+            aL-SAR
+           </a>
+           paper was accepted to ICLR 2025
+           <b style="color:red;">
+            (Spotlight Presentation)
+           </b>
+           <!-- on efficient continual learning -->
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2024.09
+           </span>
+           I am invited to give a talk at
+           <a href="https://www.naverlabs.com/">
+            Naver Labs
+           </a>
+           - Recent research on continual learning
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2024.06
+           </span>
+           Two papers accepted to CoLLAs 2024 Workshop Track
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2024.06
+           </span>
+           I am invited to give a talk at
+           <a href="https://machinelearning.apple.com/">
+            Apple research
+           </a>
+           - Practical set‑ups and methods for continual learning
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2024.02
+           </span>
+           Our
+           <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Seo_Learning_Equi-angular_Representations_for_Online_Continual_Learning_CVPR_2024_paper.pdf">
+            EARL
+           </a>
+           paper was accepted to CVPR 2024
+           <!-- on online continual learning  -->
+          </td>
+         </tr>
+         <tr>
+          <td style="text-align:justify">
+           <span class="date-badge">
+            2024.01
+           </span>
+           Our
+           <a href="https://bhkim94.github.io/projects/CL-ALFRED/">
+            CL-ALFRED
+           </a>
+           paper was accepted to ICLR 2024
+           <!-- on lifelong learning agent  -->
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <p>
+      </p>
+      <p>
+      </p>
+      <br/>
+      <table class="section-block" id="experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tbody>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+         <heading>
+          &nbsp;&nbsp;&nbsp; Work Experience
+         </heading>
+        </td>
+       </tbody>
+      </table>
+      <div class="section-rule">
+      </div>
+      <p>
+      </p>
+      <table class="experience-table" style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:justify;">
+       <tbody>
+        <!-- KU Leuven -->
+        <tr style="height: 15px;">
+        </tr>
+        <!-- 간격 추가 -->
+        <tr>
+         <td align="center" style="padding:10px;width:25%;vertical-align:middle">
+          <img src="work_experiences/KULeuven/logo.png" style="border-style: none; width:50%; max-width:50%;"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <papertitle>
+           <a href="https://www.kuleuven.be/english/kuleuven/index.html">
+            KU Leuven
+           </a>
+          </papertitle>
+          <br/>
+          Researcher at
+          <a href="https://www.esat.kuleuven.be/psi">
+           ESAT-PSI Lab
+          </a>
+          (Mar. 2025 ~ Jul. 2026)
+          <br/>
+          Advisor: Prof.
+          <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
+           Tinne Tuytelaars
+          </a>
+         </td>
+        </tr>
+        <tr style="height: 20px;">
+        </tr>
+        <!-- 간격 추가 -->
+        <!-- 서울대학교 -->
+        <tr>
+         <td align="center" style="padding:10px;width:25%;vertical-align:middle">
+          <img src="work_experiences/SNU/logo.png" style="border-style: none; width:35%; max-width:35%;"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <papertitle>
+           <a href="https://en.snu.ac.kr/index.html">
+            Seoul National University
+           </a>
+          </papertitle>
+          <br/>
+          Researcher at
+          <a href="https://snumprlab.github.io/">
+           SNUMPR Lab
+          </a>
+          (Sep. 2024 ~ Feb. 2025)
+          <br/>
+          Advisor: Prof.
+          <a href="http://ppolon.github.io/">
+           Jonghyun Choi
+          </a>
+         </td>
+        </tr>
+        <tr style="height: 20px;">
+        </tr>
+        <!-- 간격 추가 -->
+        <!-- LG AI Research -->
+        <tr>
+         <td align="center" style="padding:10px;width:25%;vertical-align:middle">
+          <img src="work_experiences/LGAIReasearch/logo.png" style="border-style: none; width:70%; max-width:70%;"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <papertitle>
+           <a href="https://www.lgresearch.ai">
+            LG AI Research
+           </a>
+          </papertitle>
+          <br/>
+          Research Intern at
+          <a href="https://www.lgresearch.ai">
+           AML Team
+          </a>
+          (Feb. 2023 ~ Aug. 2023)
+          <br/>
+          Mentor: Dr.
+          <a href="https://hankook.github.io/">
+           Hankook Lee
+          </a>
+         </td>
+        </tr>
+        <tr style="height: 20px;">
+        </tr>
+        <!-- 간격 추가 -->
+       </tbody>
+      </table>
+      <p>
+      </p>
+      <p>
+      </p>
+      <!-- <br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Preprints</heading></td>
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
         </tbody></table> -->
-<p></p>
-<p></p>
-<br/>
-<table class="section-block" id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<td style="padding:0px;width:100%;vertical-align:middle"><heading>    Publications</heading></td>
-</tbody></table><div class="section-rule"></div>
-<table class="publications-table" style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
-<!-- ################################################################################################################### -->
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/kim2025risk/kim2025risk.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
-<papertitle>
-                Attention Misses Visual Risk: Risk-Adaptive Steering for Multimodal Safety Alignment
-              </papertitle>
-<!-- </a> -->
-<br/>
-
-              Jonghyun Park,
-              <strong>Minhyuk Seo</strong>,
+      <p>
+      </p>
+      <p>
+      </p>
+      <br/>
+      <table class="section-block" id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tbody>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+         <heading>
+          &nbsp;&nbsp;&nbsp; Publications
+         </heading>
+        </td>
+       </tbody>
+      </table>
+      <div class="section-rule">
+      </div>
+      <table class="publications-table" style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify">
+       <tbody>
+        <!-- ################################################################################################################### -->
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/kim2025risk/kim2025risk.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
+          <papertitle>
+           Attention Misses Visual Risk: Risk-Adaptive Steering for Multimodal Safety Alignment
+          </papertitle>
+          <!-- </a> -->
+          <br/>
+          Jonghyun Park,
+          <strong>
+           Minhyuk Seo
+          </strong>
+          ,
               Chaewon Yeo,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>
-<br/>
-<strong> ECCV 2026 </strong>
-<br/>
-
-              [<a href="https://arxiv.org/pdf/2510.13698" target="_new">pdf</a>]
-            </td>
-</tr>
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/seo2025oasis/seo2025oasis.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
-<papertitle>
-                OASIS: Online Sample Selection for Continual Instruction Tuning
-              </papertitle>
-<!-- </a> -->
-<br/>
-<a href="https://98minjae.github.io/" target="_new">Minjae Lee*</a>,
-              <strong>Minhyuk Seo</strong>*,
-              <a href="https://tingyu215.github.io/" target="_new">Tingyu Qu</a>,
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>
-<br/>
-<strong> ACL 2026 (main) </strong>
-<br/>
-
-              [<a href="https://arxiv.org/pdf/2506.02011" target="_new">pdf</a>]
-              <!-- [<a href="papers/seo2025oasis/seo2025oasis.bib" target="_new">bibtex</a>] -->
-<!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-</td>
-</tr>
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/seo2025not/seo2025not.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
-<papertitle>
-                Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients
-              </papertitle>
-<!-- </a> -->
-<br/>
-<strong>Minhyuk Seo</strong>*,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          <br/>
+          <strong>
+           ECCV 2026
+          </strong>
+          <br/>
+          [
+          <a href="https://arxiv.org/pdf/2510.13698" target="_new">
+           pdf
+          </a>
+          ]
+         </td>
+        </tr>
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/seo2025oasis/seo2025oasis.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
+          <papertitle>
+           OASIS: Online Sample Selection for Continual Instruction Tuning
+          </papertitle>
+          <!-- </a> -->
+          <br/>
+          <a href="https://98minjae.github.io/" target="_new">
+           Minjae Lee*
+          </a>
+          ,
+          <strong>
+           Minhyuk Seo
+          </strong>
+          *,
+          <a href="https://tingyu215.github.io/" target="_new">
+           Tingyu Qu
+          </a>
+          ,
+          <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
+           Tinne Tuytelaars
+          </a>
+          ,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          <br/>
+          <strong>
+           ACL 2026 (main)
+          </strong>
+          <br/>
+          [
+          <a href="https://arxiv.org/pdf/2506.02011" target="_new">
+           pdf
+          </a>
+          ]
+          <!-- [<a href="papers/seo2025oasis/seo2025oasis.bib" target="_new">bibtex</a>] -->
+          <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
+         </td>
+        </tr>
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/seo2025not/seo2025not.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
+          <papertitle>
+           Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients
+          </papertitle>
+          <!-- </a> -->
+          <br/>
+          <strong>
+           Minhyuk Seo
+          </strong>
+          *,
               Taeheon Kim*,
-              <a href="https://hankook.github.io/" target="_new">Hankook Lee</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>
-<br/>
-<strong> ICLR 2026 </strong> /  <b style="color:red;">Best Paper Award</b> @ AAAI 2026 Workshop of PerFM
-              <br/>
-
-              [<a href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_new">pdf</a>]
-              <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
-<!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-</td>
-</tr>
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/seo2024just/seo2024just.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-<papertitle>
-                  GenOL: Generating Diverse Examples for Name Only Online Learning
-                </papertitle>
-<!-- </a> -->
-<br/>
-<strong>Minhyuk Seo</strong>,
+          <a href="https://hankook.github.io/" target="_new">
+           Hankook Lee
+          </a>
+          ,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          ,
+          <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
+           Tinne Tuytelaars
+          </a>
+          <br/>
+          <strong>
+           ICLR 2026
+          </strong>
+          /
+          <b style="color:red;">
+           Best Paper Award
+          </b>
+          @ AAAI 2026 Workshop of PerFM
+          <br/>
+          [
+          <a href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_new">
+           pdf
+          </a>
+          ]
+          <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
+          <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
+         </td>
+        </tr>
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/seo2024just/seo2024just.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
+          <papertitle>
+           GenOL: Generating Diverse Examples for Name Only Online Learning
+          </papertitle>
+          <!-- </a> -->
+          <br/>
+          <strong>
+           Minhyuk Seo
+          </strong>
+          ,
               Seongwon Cho,
               Minjae Lee,
               Diganta Misra,
               Hyeonbeom Choi,
-              <a href="https://sites.google.com/site/seonjookim/?pli=1" target="_new">Seon Joo Kim</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <br/>
-<strong> TMLR 2025 </strong>
-<br/>
-
-              [<a href="https://openreview.net/forum?id=QPfVoTMLWq" target="_new">pdf</a>]
-              <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
-<!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-</td>
-</tr>
-<br/>
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/seo2024budgeted/seo2024budgeted.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-<papertitle>
-                  Budgeted Online Continual Learning by Adaptive Layer Freezing and Frequency-based Sampling
-                </papertitle>
-<!-- </a> -->
-<br/>
-<!-- <strong>Byeonghwi Kim</strong>*, -->
-<strong>Minhyuk Seo</strong>*,
+          <a href="https://sites.google.com/site/seonjookim/?pli=1" target="_new">
+           Seon Joo Kim
+          </a>
+          ,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          ,
+          <br/>
+          <strong>
+           TMLR 2025
+          </strong>
+          <br/>
+          [
+          <a href="https://openreview.net/forum?id=QPfVoTMLWq" target="_new">
+           pdf
+          </a>
+          ]
+          <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
+          <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
+         </td>
+        </tr>
+        <br/>
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/seo2024budgeted/seo2024budgeted.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
+          <papertitle>
+           Budgeted Online Continual Learning by Adaptive Layer Freezing and Frequency-based Sampling
+          </papertitle>
+          <!-- </a> -->
+          <br/>
+          <!-- <strong>Byeonghwi Kim</strong>*, -->
+          <strong>
+           Minhyuk Seo
+          </strong>
+          *,
               Hyunseo Koh*,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <br/>
-<!-- <span style="line-height:20%"><br></span> -->
-<strong> ICLR 2025 <b style="color:red;">(Spotlight Presentation)</b> </strong>
-<br/>
-              [<a href="https://openreview.net/forum?id=dOAkHmsjRX" target="_new">pdf</a>]
-              [<a href="papers/seo2024budgeted/seo2024budgeted.bib" target="_new">bibtex</a>]
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-</td>
-</tr>
-<!-- ################################################################################################################### -->
-<!-- ################################################################################################################### -->
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/seo2024learning/seo2024learning.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<a href="https://dbd05088.github.io/projects/EARL/">
-<papertitle>
-                  Learning Equi-angular Representations for Online Continual Learning
-                </papertitle>
-</a>
-<br/>
-<!-- <strong>Byeonghwi Kim</strong>*, -->
-<strong>Minhyuk Seo</strong>
-              Hyunseo Koh, 
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          ,
+          <br/>
+          <!-- <span style="line-height:20%"><br></span> -->
+          <strong>
+           ICLR 2025
+           <b style="color:red;">
+            (Spotlight Presentation)
+           </b>
+          </strong>
+          <br/>
+          [
+          <a href="https://openreview.net/forum?id=dOAkHmsjRX" target="_new">
+           pdf
+          </a>
+          ]
+              [
+          <a href="papers/seo2024budgeted/seo2024budgeted.bib" target="_new">
+           bibtex
+          </a>
+          ]
+          <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
+         </td>
+        </tr>
+        <!-- ################################################################################################################### -->
+        <!-- ################################################################################################################### -->
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/seo2024learning/seo2024learning.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <a href="https://dbd05088.github.io/projects/EARL/">
+           <papertitle>
+            Learning Equi-angular Representations for Online Continual Learning
+           </papertitle>
+          </a>
+          <br/>
+          <!-- <strong>Byeonghwi Kim</strong>*, -->
+          <strong>
+           Minhyuk Seo
+          </strong>
+          Hyunseo Koh, 
               Wonje Jeung, 
               Min Jae Lee, 
-              San Kim, 
-              <a href="http://hankook.github.io/" target="_new">Hankook Lee</a>,
+              San Kim,
+          <a href="http://hankook.github.io/" target="_new">
+           Hankook Lee
+          </a>
+          ,
               Sungjun Cho, 
               Sungik Choi, 
-              Hyunwoo Kim, 
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>,
-              <br/>
-<strong>CVPR 2024 </strong>
-<!-- <br>
+              Hyunwoo Kim,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          ,
+          <br/>
+          <strong>
+           CVPR 2024
+          </strong>
+          <!-- <br>
               <em>CoLLAs 2024 Workshop Track</em> -->
-<br/>
-
-              [<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Seo_Learning_Equi-angular_Representations_for_Online_Continual_Learning_CVPR_2024_paper.pdf" target="_new">pdf</a>]
-              [<a href="papers/seo2024online/seo2024online.bib" target="_new">bibtex</a>]
-              [<a href="https://github.com/yonseivnl/earl" target="_new">code</a>]
-            </td>
-</tr>
-<!-- ################################################################################################################### -->
-<!-- ################################################################################################################### -->
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/kim2024online/kim2024online.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<a href="https://dbd05088.github.io/projects/CL-ALFRED/">
-<papertitle>
-                    Online Continual Learning for Interactive Instruction Following Agents
-                </papertitle>
-</a>
-<br/>
-<!-- <strong>Byeonghwi Kim</strong>*, -->
-<a href="http://bhkim94.github.io/" target="_new">Byeonghwi Kim</a>*,
-              <strong>Minhyuk Seo</strong>*,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>
-<br/>
-<strong>ICLR 2024</strong>
-<!-- <br>
+          <br/>
+          [
+          <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Seo_Learning_Equi-angular_Representations_for_Online_Continual_Learning_CVPR_2024_paper.pdf" target="_new">
+           pdf
+          </a>
+          ]
+              [
+          <a href="papers/seo2024online/seo2024online.bib" target="_new">
+           bibtex
+          </a>
+          ]
+              [
+          <a href="https://github.com/yonseivnl/earl" target="_new">
+           code
+          </a>
+          ]
+         </td>
+        </tr>
+        <!-- ################################################################################################################### -->
+        <!-- ################################################################################################################### -->
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/kim2024online/kim2024online.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <a href="https://dbd05088.github.io/projects/CL-ALFRED/">
+           <papertitle>
+            Online Continual Learning for Interactive Instruction Following Agents
+           </papertitle>
+          </a>
+          <br/>
+          <!-- <strong>Byeonghwi Kim</strong>*, -->
+          <a href="http://bhkim94.github.io/" target="_new">
+           Byeonghwi Kim
+          </a>
+          *,
+          <strong>
+           Minhyuk Seo
+          </strong>
+          *,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          <br/>
+          <strong>
+           ICLR 2024
+          </strong>
+          <!-- <br>
             <em>CoLLAs 2024 Workshop Track</em> -->
-<br/>
-
-              [<a href="https://openreview.net/pdf?id=7M0EzjugaN" target="_new">pdf</a>]
-              [<a href="papers/kim2024online/kim2024online.bib" target="_new">bibtex</a>]
-              [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>]
-            </td>
-</tr>
-<!-- ################################################################################################################### -->
-<!-- ################################################################################################################### -->
-<tr>
-<td style="padding:5px;width:40%;vertical-align:middle">
-<img src="papers/koh2023online/koh2023online.png" style="border-style: none width:100%;max-width:100%"/>
-</td>
-<td align="justify" valign="middle" width="75%">
-<papertitle>
-                    Online Boundary-Free Continual Learning by Scheduled Data Prior
-                </papertitle>
-<br/>
-<!-- <strong>Byeonghwi Kim</strong>*, -->
-              Hyunseo Koh,
-              <strong>Minhyuk Seo</strong>,
-              <a href="http://hwany-j.github.io/" target="_new">Jihwan Bang</a>,
-              <a href="http://songhwanjun.github.io/" target="_new">Hwanjun Song</a>,
+          <br/>
+          [
+          <a href="https://openreview.net/pdf?id=7M0EzjugaN" target="_new">
+           pdf
+          </a>
+          ]
+              [
+          <a href="papers/kim2024online/kim2024online.bib" target="_new">
+           bibtex
+          </a>
+          ]
+              [
+          <a href="https://github.com/snumprlab/cl-alfred" target="_new">
+           code
+          </a>
+          ]
+         </td>
+        </tr>
+        <!-- ################################################################################################################### -->
+        <!-- ################################################################################################################### -->
+        <tr>
+         <td style="padding:5px;width:40%;vertical-align:middle">
+          <img src="papers/koh2023online/koh2023online.png" style="border-style: none width:100%;max-width:100%"/>
+         </td>
+         <td align="justify" valign="middle" width="75%">
+          <papertitle>
+           Online Boundary-Free Continual Learning by Scheduled Data Prior
+          </papertitle>
+          <br/>
+          <!-- <strong>Byeonghwi Kim</strong>*, -->
+          Hyunseo Koh,
+          <strong>
+           Minhyuk Seo
+          </strong>
+          ,
+          <a href="http://hwany-j.github.io/" target="_new">
+           Jihwan Bang
+          </a>
+          ,
+          <a href="http://songhwanjun.github.io/" target="_new">
+           Hwanjun Song
+          </a>
+          ,
               Deokki Hong, 
               Seulki Park,
-              <a href="http://aidljwha.wordpress.com/" target="_new">Jung-Woo Ha</a>,
-              <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a>
-<br/>
-<strong>ICLR 2023</strong> <b style="color:Magenta;"></b>
-<br/>
-
-              [<a href="https://openreview.net/pdf?id=qco4ekz2Epm" target="_new">pdf</a>]
-              [<a href="papers/koh2023online/koh2023online.bib" target="_new">bibtex</a>]
-              [<a href="https://github.com/yonseivnl/sdp" target="_new">code</a>]
-            </td>
-</tr>
-<!-- ################################################################################################################### -->
-</tbody></table>
-<br/>
-<p></p>
-<table class="section-block" id="awards" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<td style="padding:0px;width:100%;vertical-align:middle"><heading>    Awards</heading></td>
-</tbody></table><div class="section-rule"></div>
-<ul>
-<li>
-<papertitle> Travel Grant - The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2025
-          </papertitle></li>
-<li>
-<papertitle> Travel Grant - International Conference on Learning Representations (ICLR) 2025
-          </papertitle></li>
-<li>
-<papertitle> 2nd Place Award - Class-Incremental with Repetition Scenario Challenge </papertitle> - <a href="https://sites.google.com/view/clvision2024/challenge/challenge-results" target="_new">CLVISION Workshop @ CVPR 2024</a>
-</li>
-<li>
-<papertitle> Bronze Prize - Outstanding Paper Awards </papertitle> - IPIU 2024
-          </li>
-<li>
-<papertitle> <a href="https://wvcl.vis.xyz/challenges" target="_new"></a> 1st Place Award - Continual Test-time Adaptation for Object Detection Challenge </papertitle> - <a href="https://wvcl.vis.xyz/challenges" target="_new">VCL Workshop @ ICCV 2023</a>
-<!-- [<a href="https://yonseivnl.github.io/research/papers/iccvw23_paper_ttadame.pdf" target="_new">Technical Report</a>] -->
-</li>
-<li>
-<papertitle> 1st Place Award (Minister of Science, ICT and Future Planning Award) </papertitle> - HANIUM ICT competition 2019 
-          </li>
-</ul>
-<br/>
-<p></p>
-<table class="section-block" id="service" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<td style="padding:0px;width:100%;vertical-align:middle"><heading>    Academic Services</heading></td>
-</tbody></table><div class="section-rule"></div>
-<ul>
-<li>
-            Reviewer
-            <br/>
-<ul>
-<li> CVPR (2024-2026), ICML (2024-2026), ICLR (2024-2026), AISTATS (2025-2026), ICRA (2025), TPAMI (2024-2026), NeurIPS (2024-2026), IJCV (2025-2026), ICCV (2025), WACV (2026), ECCV (2026), AAAI (2026-2027), ACL ARR (May 2025), CoRL @ LLHomeRobots (2024) </li>
-</ul>
-</li>
-<li>
-            Program committee member
-            <br/>
-<ul>
-<li> Challenge chair at <a href="https://sites.google.com/view/clvision2025/organizers?authuser=0" target="_new"> ICCV 2025 @ Continual Learning and Computer Vision Workshop </a> </li>
-</ul>
-</li>
-</ul>
-<br/>
-<!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <a href="http://aidljwha.wordpress.com/" target="_new">
+           Jung-Woo Ha
+          </a>
+          ,
+          <a href="http://ppolon.github.io/" target="_new">
+           Jonghyun Choi
+          </a>
+          <br/>
+          <strong>
+           ICLR 2023
+          </strong>
+          <b style="color:Magenta;">
+          </b>
+          <br/>
+          [
+          <a href="https://openreview.net/pdf?id=qco4ekz2Epm" target="_new">
+           pdf
+          </a>
+          ]
+              [
+          <a href="papers/koh2023online/koh2023online.bib" target="_new">
+           bibtex
+          </a>
+          ]
+              [
+          <a href="https://github.com/yonseivnl/sdp" target="_new">
+           code
+          </a>
+          ]
+         </td>
+        </tr>
+        <!-- ################################################################################################################### -->
+       </tbody>
+      </table>
+      <br/>
+      <p>
+      </p>
+      <table class="section-block" id="awards" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tbody>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+         <heading>
+          &nbsp;&nbsp;&nbsp; Awards
+         </heading>
+        </td>
+       </tbody>
+      </table>
+      <div class="section-rule">
+      </div>
+      <ul>
+       <li>
+        <papertitle>
+         Travel Grant - The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2025
+        </papertitle>
+       </li>
+       <li>
+        <papertitle>
+         Travel Grant - International Conference on Learning Representations (ICLR) 2025
+        </papertitle>
+       </li>
+       <li>
+        <papertitle>
+         2nd Place Award - Class-Incremental with Repetition Scenario Challenge
+        </papertitle>
+        -
+        <a href="https://sites.google.com/view/clvision2024/challenge/challenge-results" target="_new">
+         CLVISION Workshop @ CVPR 2024
+        </a>
+       </li>
+       <li>
+        <papertitle>
+         Bronze Prize - Outstanding Paper Awards
+        </papertitle>
+        - IPIU 2024
+       </li>
+       <li>
+        <papertitle>
+         <a href="https://wvcl.vis.xyz/challenges" target="_new">
+         </a>
+         1st Place Award - Continual Test-time Adaptation for Object Detection Challenge
+        </papertitle>
+        -
+        <a href="https://wvcl.vis.xyz/challenges" target="_new">
+         VCL Workshop @ ICCV 2023
+        </a>
+        <!-- [<a href="https://yonseivnl.github.io/research/papers/iccvw23_paper_ttadame.pdf" target="_new">Technical Report</a>] -->
+       </li>
+       <li>
+        <papertitle>
+         1st Place Award (Minister of Science, ICT and Future Planning Award)
+        </papertitle>
+        - HANIUM ICT competition 2019
+       </li>
+      </ul>
+      <br/>
+      <p>
+      </p>
+      <table class="section-block" id="service" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+       <tbody>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+         <heading>
+          &nbsp;&nbsp;&nbsp; Academic Services
+         </heading>
+        </td>
+       </tbody>
+      </table>
+      <div class="section-rule">
+      </div>
+      <ul>
+       <li>
+        Reviewer
+        <br/>
+        <ul>
+         <li>
+          CVPR (2024-2026), ICML (2024-2026), ICLR (2024-2026), AISTATS (2025-2026), ICRA (2025), TPAMI (2024-2026), NeurIPS (2024-2026), IJCV (2025-2026), ICCV (2025), WACV (2026), ECCV (2026), AAAI (2026-2027), ACL ARR (May 2025), CoRL @ LLHomeRobots (2024)
+         </li>
+        </ul>
+       </li>
+       <li>
+        Program committee member
+        <br/>
+        <ul>
+         <li>
+          Challenge chair at
+          <a href="https://sites.google.com/view/clvision2025/organizers?authuser=0" target="_new">
+           ICCV 2025 @ Continual Learning and Computer Vision Workshop
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <br/>
+      <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Academic Services</heading></td>
         </tbody></table>
         <ul>
           <li><papertitle>Reviewer</papertitle></li>
           <ol style="margin-left: -3em">- CVPR(24') </ol>
         </ul> -->
-<table class="section-block" id="scholarships" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <td style="padding:0px;width:100%;vertical-align:middle"><heading>    Scholarships</heading></td>
-</tbody></table><div class="section-rule"></div>
-<ul>
-    <!DOCTYPE html>
-    <html lang="en">
-     <head>
-      <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-      <title>
-       Minhyuk Seo
-      </title>
-      <meta content="Minhyuk Seo" name="author"/>
-      <meta content="width=device-width, initial-scale=1" name="viewport"/>
-      <style type="text/css">
-       :root {
-      --bg:#fff;
-      --surface:#f7f9fc;
-      --text:#1f2937;
-      --muted:#667085;
-      --border:#e5e7eb;
-      --accent:#003262;
-      --accent-soft:#eaf1f8;
-      --max:1040px;
-    }
-    
-    * {
-      box-sizing:border-box;
-    }
-    
-    html {
-      scroll-behavior:smooth;
-    }
-    
-    body {
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      font-size:15.5px;
-      line-height:1.65;
-    }
-    
-    a {
-      color:var(--accent);
-      text-decoration:none;
-    }
-    
-    a:hover {
-      text-decoration:underline;
-    }
-    
-    body>table {
-      max-width:var(--max)!important;
-      padding:0 24px;
-    }
-    
-    name {
-      font-size:38px!important;
-      font-weight:750;
-      letter-spacing:-.035em;
-      color:#111827;
-    }
-    
-    heading {
-      display:block;
-      font-size:24px!important;
-      font-weight:750;
-      letter-spacing:-.025em;
-      color:#111827;
-      margin:8px 0 14px;
-    }
-    
-    p {
-      margin:0 0 14px;
-    }
-    
-    .top-nav {
-      position:sticky;
-      top:0;
-      z-index:20;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid rgba(229,231,235,.9);
-      margin:0 calc(50% - 50vw) 28px;
-      padding:0 max(24px,calc((100vw - var(--max))/2));
-    }
-    
-    .top-nav-inner {
-      height:58px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:24px;
-    }
-    
-    .top-nav .brand {
-      font-weight:750;
-      color:#111827;
-      letter-spacing:-.02em;
-    }
-    
-    .top-nav .links {
-      display:flex;
-      gap:20px;
-      flex-wrap:wrap;
-      font-size:14px;
-    }
-    
-    .top-nav .links a {
-      color:#475467;
-    }
-    
-    .top-nav .links a:hover {
-      color:var(--accent);
-      text-decoration:none;
-    }
-    
-    .hero-table {
-      width:100%!important;
-      text-align:left!important;
-    }
-    
-    .hero-copy {
-      padding-right:36px!important;
-    }
-    
-    .hero-copy p {
-      text-align:left!important;
-    }
-    
-    .hero-subtitle {
-      font-size:18px;
-      color:#344054;
-      margin-top:-4px;
-      margin-bottom:18px;
-    }
-    
-    .hero-links {
-      text-align:left!important;
-      margin-top:18px;
-    }
-    
-    .hero-links a {
-      display:inline-block;
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:6px 11px;
-      background:#fff;
-      color:#344054;
-      font-size:14px;
-      font-weight:600;
-      margin:0 7px 7px 0;
-    }
-    
-    .hero-links a:hover {
-      background:var(--surface);
-      text-decoration:none;
-    }
-    
-    .hero-photo img {
-      width:210px!important;
-      max-width:210px!important;
-      aspect-ratio:1/1;
-      object-fit:cover;
-      border-radius:22px;
-      box-shadow:0 10px 30px rgba(15,23,42,.10);
-    }
-    
-    .research-tags {
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-      margin:10px 0 8px;
-    }
-    
-    .research-tag {
-      background:var(--accent-soft);
-      color:var(--accent);
-      border-radius:999px;
-      padding:5px 10px;
-      font-size:13px;
-      font-weight:650;
-    }
-    
-    .section-block {
-      margin-top:46px;
-      scroll-margin-top:82px;
-    }
-    
-    .section-rule {
-      width:46px;
-      height:3px;
-      border-radius:99px;
-      background:var(--accent);
-      margin:-8px 0 20px;
-    }
-    
-    .news-scroller {
-      max-width:100%!important;
-      max-height:285px!important;
-      overflow-y:auto!important;
-      overflow-x:hidden!important;
-      margin:0!important;
-      padding-right:8px;
-      scrollbar-gutter:stable;
-    }
-    
-    .news-table {
-      width:100%;
-      border-collapse:separate!important;
-      border-spacing:0 8px!important;
-    }
-    
-    .news-table td {
-      padding:11px 14px!important;
-      background:var(--surface);
-      border:1px solid var(--border);
-      border-radius:12px;
-      text-align:left!important;
-    }
-    
-    .date-badge {
-      background:var(--accent-soft)!important;
-      color:var(--accent)!important;
-      padding:4px 8px!important;
-      border-radius:999px!important;
-      font-size:12px!important;
-      margin-right:10px!important;
-    }
-    
-    .experience-table {
-      border-spacing:0 10px!important;
-    }
-    
-    .experience-table td {
-      padding-top:14px!important;
-      padding-bottom:14px!important;
-    }
-    
-    .experience-table img {
-      max-height:54px;
-      object-fit:contain;
-    }
-    
-    .publications-table {
-      border-spacing:0 18px!important;
-    }
-    
-    .publications-table>tbody>tr>td {
-      padding:14px!important;
-      border-top:1px solid var(--border);
-      border-bottom:1px solid var(--border);
-    }
-    
-    .publications-table>tbody>tr>td:first-child {
-      border-left:1px solid var(--border);
-      border-radius:14px 0 0 14px;
-    }
-    
-    .publications-table>tbody>tr>td:last-child {
-      border-right:1px solid var(--border);
-      border-radius:0 14px 14px 0;
-    }
-    
-    .publications-table img {
-      border-radius:10px;
-      display:block;
-    }
-    
-    papertitle {
-      font-size:17px!important;
-      font-weight:750!important;
-      line-height:1.35;
-      color:#111827;
-    }
-    
-    ul {
-      padding-left:22px;
-    }
-    
-    li {
-      margin:6px 0;
-    }
-    
-    .footer-note {
-      color:var(--muted);
-      font-size:13px;
-    }
-    
-    @media(max-width:760px) {
-      body>table {
-        padding:0 16px;
-      }
-    
-      .top-nav {
-        padding:0 16px;
-        margin-bottom:18px;
-      }
-    
-      .top-nav .links {
-        display:none;
-      }
-    
-      .hero-table,.hero-table tbody,.hero-table tr,.hero-table td {
-        display:block!important;
-        width:100%!important;
-      }
-    
-      .hero-copy {
-        padding-right:0!important;
-      }
-    
-      .hero-photo {
-        text-align:left!important;
-        margin-top:22px;
-      }
-    
-      .hero-photo img {
-        width:170px!important;
-        max-width:170px!important;
-      }
-    
-      name {
-        font-size:32px!important;
-      }
-    
-      heading {
-        font-size:22px!important;
-      }
-    
-      .publications-table,.publications-table tbody,.publications-table tr,.publications-table td {
-        display:block!important;
-        width:100%!important;
-      }
-    
-      .publications-table>tbody>tr {
-        margin-bottom:18px;
-      }
-    
-      .publications-table>tbody>tr>td {
-        border:1px solid var(--border)!important;
-        border-radius:12px!important;
-      }
-    
-      .publications-table>tbody>tr>td:first-child {
-        border-bottom:0!important;
-        border-radius:12px 12px 0 0!important;
-      }
-    
-      .publications-table>tbody>tr>td:last-child {
-        border-radius:0 0 12px 12px!important;
-      }
-    
-      .publications-table img {
-        width:100%!important;
-        max-width:100%!important;
-      }
-    
-    }
-    
-    .news-scroller::-webkit-scrollbar {
-      width: 8px;
-    }
-    
-    .news-scroller::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    
-    .news-scroller::-webkit-scrollbar-thumb {
-      background: #cbd5e1;
-      border-radius: 999px;
-    }
-    
-    .news-scroller::-webkit-scrollbar-thumb:hover {
-      background: #98a2b3;
-    }
-      </style>
-      <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-      <link href="images/seal_icon.png" rel="icon" type="image/png"/>
-     </head>
-     <body>
-      <nav class="top-nav">
-       <div class="top-nav-inner">
-        <a class="brand" href="#top">
-         Minhyuk Seo
-        </a>
-        <div class="links">
-         <a href="#news">
-          News
-         </a>
-         <a href="#experience">
-          Experience
-         </a>
-         <a href="#publications">
-          Publications
-         </a>
-         <a href="#awards">
-          Awards
-         </a>
-         <a href="#service">
-          Service
-         </a>
-         <a href="personal/CV.pdf">
-          CV
-         </a>
-        </div>
-       </div>
-      </nav>
-      <table id="top" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
        <tbody>
-        <tr style="padding:0px">
+        <tr>
          <td style="padding:0px">
-          <table class="hero-table" style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:center">
-           <tbody>
-            <tr style="padding:-5px">
-             <td class="hero-copy" style="padding:0%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-               <name>
-                Minhyuk Seo
-               </name>
-              </p>
-              <div class="hero-subtitle">
-               Computer Science Ph.D. Student &middot; UC Berkeley EECS
-              </div>
-              <p style="text-align:justify">
-               <!-- I am a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
-               I'm a Computer Science Ph.D. student in the Department of Electrical Engineering and Computer Sciences (EECS) at UC Berkeley, advised by
-               <a href="https://people.eecs.berkeley.edu/~jegonzal/" target="_new">
-                Prof. Joseph E. Gonzalez
-               </a>
-               .
-              </p>
-              <p style="text-align:justify">
-              </p>
-              Before joining UC Berkeley, I was a Research Associate at
-              <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">
-               KU Leuven
-              </a>
-              , where I worked with
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
-               Prof. Tinne Tuytelaars
-              </a>
-              . I earned my M.S. and B.S. degrees in Computer Science from
-              <a href="https://www.yonsei.ac.kr/sites/en_sc/index.do" target="_new">
-               Yonsei University
-              </a>
-              , advised by
-              <a href="http://ppolon.github.io/" target="_new">
-               Prof. Jonghyun Choi
-              </a>
-              .
-                    During my M.S., I was fortunate to work as a research intern with the Advanced Machine Learning team at
-              <a href="https://www.lgresearch.ai" target="_new">
-               LG AI Research
-              </a>
-              in 2023.
-              <!-- , currently a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
-              <p style="text-align:justify">
-               My research focuses on human-like AI, inspired by how humans learn and evolve. 
-                    In particular, I focus on (i) continual learning and (ii) collaborative learning, with the goal of enabling human-like learning that continually acquires knowledge over time and evolves through interaction with others.
-               <!-- Specifically, as humans continually acquire knowledge and evolve through interaction with others, I am interested in (i) Continual learning, and (ii) Collaborative learning. -->
-              </p>
-              <div class="research-tags">
-               <span class="research-tag">
-                Continual Learning
-               </span>
-               <span class="research-tag">
-                Collaborative Learning
-               </span>
-               <span class="research-tag">
-                Multimodal AI
-               </span>
-              </div>
-              <!-- 
-                  <p style="text-align:justify">
-                    I received my M.S. degree in Computer Science at Yonsei University under the supervision of Prof. <a href="http://ppolon.github.io/" target="_new">Jonghyun Choi</a> and B.S. degree in Computer Science from the same university.
-                    During my M.S., I was fortunate to work as a research intern at the Advanced Machine Learning team in <a href="https://www.lgresearch.ai" target="_new">LG AI research</a> (2023).
-                  </p> -->
-              <p class="hero-links" style="text-align:center">
-               <a href="personal/CV.pdf" target="_new">
-                CV
-               </a>
-               &nbsp;/&nbsp;
-               <a href="https://www.notion.so/Portfolio-2ca74e981cb480fab696cf0066f3954a?source=copy_link" target="_new">
-                Portfolio
-               </a>
-               &nbsp;/&nbsp;
-               <a href="mailto:minhyukseo@yonsei.ac.kr">
-                Email
-               </a>
-               &nbsp;/&nbsp;
-               <a href="https://www.linkedin.com/in/minhyuk-seo-59ba11247/">
-                Linkedin
-               </a>
-               &nbsp;/&nbsp;
-               <a href="https://scholar.google.com/citations?user=ayDPR-gAAAAJ&amp;hl=ko&amp;authuser=1" target="_new">
-                Google Scholar
-               </a>
-               &nbsp;/&nbsp;
-               <a href="https://dblp.org/pid/350/4104.html" target="_new">
-                DBLP
-               </a>
-               &nbsp;/&nbsp;
-               <a href="https://github.com/dbd05088/" target="_new">
-                Github
-               </a>
-              </p>
-             </td>
-             <!-- <td style="padding:0%;width:28%;vertical-align:top; text-align:right;">
-                  <img style="width:70%;max-width:180px; margin-top:30px;"
-                       alt="profile photo"
-                       src="personal/me.jpg">
-                </td> -->
-             <td class="hero-photo" style="padding:0%;width:28%;max-width:40%">
-              <img alt="profile photo" class="hoverZoomLink" src="personal/me.jpg" style="width:70%;max-width:100%"/>
-             </td>
-            </tr>
-           </tbody>
-          </table>
           <br/>
-          <table class="section-block" id="news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-           <tbody>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-             <heading>
-              &nbsp;&nbsp;&nbsp; News
-             </heading>
-            </td>
-           </tbody>
-          </table>
-          <div class="section-rule">
-          </div>
-          <!-- I received CVPR 2022 Outstanding Reviewer Award -->
-          <div aria-label="News list" class="news-scroller" tabindex="0">
-           <table class="news-table">
-            <tbody>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2026.06
-               </span>
-               Our
-               <a href="https://arxiv.org/pdf/2510.13698">
-                MoRAS
-               </a>
-               paper was accepted to ECCV 2026.
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2026.05
-               </span>
-               I recieved ICML 2026 Gold Reviewer Award.
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2026.04
-               </span>
-               Our
-               <a href="https://arxiv.org/pdf/2506.02011">
-                OASIS
-               </a>
-               paper was accepted to ACL 2026 (main).
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2026.01
-               </span>
-               Our
-               <a href="https://openreview.net/pdf?id=0g5Dk4Qfh0">
-                Co-LoRA
-               </a>
-               paper recieved
-               <b style="color:red;">
-                Best Paper Award
-               </b>
-               at
-               <a href="https://personalizedllm.github.io/events/perfm-aaai26/">
-                AAAI 2026 workshop of PerFM
-               </a>
-               .
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2026.01
-               </span>
-               Our
-               <a href="https://openreview.net/pdf?id=0g5Dk4Qfh0">
-                Co-LoRA
-               </a>
-               paper was accepted to ICLR 2026.
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2025.12
-               </span>
-               I am invited to give a talk at
-               <a href="https://agenticlearning.ai/">
-                NYU Agentic Learning AI Lab
-               </a>
-               - Human-like AI
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2025.09
-               </span>
-               Our
-               <a href="https://openreview.net/pdf?id=QPfVoTMLWq">
-                GenOL
-               </a>
-               paper was accepted to TMLR 2025.
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2025.07
-               </span>
-               I am invited to give a talk at
-               <a href="https://visualai.princeton.edu/">
-                Princeton Visual AI Lab
-               </a>
-               - Toward Efficient Training of MLLMs
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2025.05
-               </span>
-               Our workshop proposal (CLVISION: Continual Learning in Computer Vision) was accepted to ICCV 2025. I will serve as an Challenge Chair in
-               <a href="https://sites.google.com/view/clvision2025/overview?authuser=0" target="_new">
-                ICCV 2025 @ CLVISION
-               </a>
-               .
-              </td>
-             </tr>
-             <!-- <tr>
-                <td style="text-align:justify">
-                  <span class="date-badge">2025.04</span>
-                  One paper on heterogeneous federated learning for MLLMs accepted to <a href="https://sites.google.com/view/mmfm3rdworkshop/home" target="_new">CVPRW 2025 @ MMFM</a>.
-                </td>
-              </tr> -->
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2025.03
-               </span>
-               I started as a Research Associate at KU Leuven under the supervision of Prof.
-               <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
-                Tinne Tuytelaars
-               </a>
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2025.01
-               </span>
-               Our
-               <a href="https://openreview.net/forum?id=dOAkHmsjRX">
-                aL-SAR
-               </a>
-               paper was accepted to ICLR 2025
-               <b style="color:red;">
-                (Spotlight Presentation)
-               </b>
-               <!-- on efficient continual learning -->
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2024.09
-               </span>
-               I am invited to give a talk at
-               <a href="https://www.naverlabs.com/">
-                Naver Labs
-               </a>
-               - Recent research on continual learning
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2024.06
-               </span>
-               Two papers accepted to CoLLAs 2024 Workshop Track
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2024.06
-               </span>
-               I am invited to give a talk at
-               <a href="https://machinelearning.apple.com/">
-                Apple research
-               </a>
-               - Practical set‑ups and methods for continual learning
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2024.02
-               </span>
-               Our
-               <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Seo_Learning_Equi-angular_Representations_for_Online_Continual_Learning_CVPR_2024_paper.pdf">
-                EARL
-               </a>
-               paper was accepted to CVPR 2024
-               <!-- on online continual learning  -->
-              </td>
-             </tr>
-             <tr>
-              <td style="text-align:justify">
-               <span class="date-badge">
-                2024.01
-               </span>
-               Our
-               <a href="https://bhkim94.github.io/projects/CL-ALFRED/">
-                CL-ALFRED
-               </a>
-               paper was accepted to ICLR 2024
-               <!-- on lifelong learning agent  -->
-              </td>
-             </tr>
-            </tbody>
-           </table>
-          </div>
-          <p>
+          <p class="footer-note" style="text-align:right;font-size:small;">
+           This template is from
+           <a href="https://jonbarron.info/" target="_new">
+            Jon Barron
+           </a>
+           .
           </p>
-          <p>
-          </p>
-          <br/>
-          <table class="section-block" id="experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-           <tbody>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-             <heading>
-              &nbsp;&nbsp;&nbsp; Work Experience
-             </heading>
-            </td>
-           </tbody>
-          </table>
-          <div class="section-rule">
-          </div>
-          <p>
-          </p>
-          <table class="experience-table" style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:justify;">
-           <tbody>
-            <!-- KU Leuven -->
-            <tr style="height: 15px;">
-            </tr>
-            <!-- 간격 추가 -->
-            <tr>
-             <td align="center" style="padding:10px;width:25%;vertical-align:middle">
-              <img src="work_experiences/KULeuven/logo.png" style="border-style: none; width:50%; max-width:50%;"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <papertitle>
-               <a href="https://www.kuleuven.be/english/kuleuven/index.html">
-                KU Leuven
-               </a>
-              </papertitle>
-              <br/>
-              Researcher at
-              <a href="https://www.esat.kuleuven.be/psi">
-               ESAT-PSI Lab
-              </a>
-              (Mar. 2025 ~ Jul. 2026)
-              <br/>
-              Advisor: Prof.
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
-               Tinne Tuytelaars
-              </a>
-             </td>
-            </tr>
-            <tr style="height: 20px;">
-            </tr>
-            <!-- 간격 추가 -->
-            <!-- 서울대학교 -->
-            <tr>
-             <td align="center" style="padding:10px;width:25%;vertical-align:middle">
-              <img src="work_experiences/SNU/logo.png" style="border-style: none; width:35%; max-width:35%;"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <papertitle>
-               <a href="https://en.snu.ac.kr/index.html">
-                Seoul National University
-               </a>
-              </papertitle>
-              <br/>
-              Researcher at
-              <a href="https://snumprlab.github.io/">
-               SNUMPR Lab
-              </a>
-              (Sep. 2024 ~ Feb. 2025)
-              <br/>
-              Advisor: Prof.
-              <a href="http://ppolon.github.io/">
-               Jonghyun Choi
-              </a>
-             </td>
-            </tr>
-            <tr style="height: 20px;">
-            </tr>
-            <!-- 간격 추가 -->
-            <!-- LG AI Research -->
-            <tr>
-             <td align="center" style="padding:10px;width:25%;vertical-align:middle">
-              <img src="work_experiences/LGAIReasearch/logo.png" style="border-style: none; width:70%; max-width:70%;"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <papertitle>
-               <a href="https://www.lgresearch.ai">
-                LG AI Research
-               </a>
-              </papertitle>
-              <br/>
-              Research Intern at
-              <a href="https://www.lgresearch.ai">
-               AML Team
-              </a>
-              (Feb. 2023 ~ Aug. 2023)
-              <br/>
-              Mentor: Dr.
-              <a href="https://hankook.github.io/">
-               Hankook Lee
-              </a>
-             </td>
-            </tr>
-            <tr style="height: 20px;">
-            </tr>
-            <!-- 간격 추가 -->
-           </tbody>
-          </table>
-          <p>
-          </p>
-          <p>
-          </p>
-          <!-- <br>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Preprints</heading></td>
-            </tbody></table>
-    
-            <table style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
-            </tbody></table> -->
-          <p>
-          </p>
-          <p>
-          </p>
-          <br/>
-          <table class="section-block" id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-           <tbody>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-             <heading>
-              &nbsp;&nbsp;&nbsp; Publications
-             </heading>
-            </td>
-           </tbody>
-          </table>
-          <div class="section-rule">
-          </div>
-          <table class="publications-table" style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify">
-           <tbody>
-            <!-- ################################################################################################################### -->
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/kim2025risk/kim2025risk.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
-              <papertitle>
-               Attention Misses Visual Risk: Risk-Adaptive Steering for Multimodal Safety Alignment
-              </papertitle>
-              <!-- </a> -->
-              <br/>
-              Jonghyun Park,
-              <strong>
-               Minhyuk Seo
-              </strong>
-              ,
-                  Chaewon Yeo,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              <br/>
-              <strong>
-               ECCV 2026
-              </strong>
-              <br/>
-              [
-              <a href="https://arxiv.org/pdf/2510.13698" target="_new">
-               pdf
-              </a>
-              ]
-             </td>
-            </tr>
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/seo2025oasis/seo2025oasis.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
-              <papertitle>
-               OASIS: Online Sample Selection for Continual Instruction Tuning
-              </papertitle>
-              <!-- </a> -->
-              <br/>
-              <a href="https://98minjae.github.io/" target="_new">
-               Minjae Lee*
-              </a>
-              ,
-              <strong>
-               Minhyuk Seo
-              </strong>
-              *,
-              <a href="https://tingyu215.github.io/" target="_new">
-               Tingyu Qu
-              </a>
-              ,
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
-               Tinne Tuytelaars
-              </a>
-              ,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              <br/>
-              <strong>
-               ACL 2026 (main)
-              </strong>
-              <br/>
-              [
-              <a href="https://arxiv.org/pdf/2506.02011" target="_new">
-               pdf
-              </a>
-              ]
-              <!-- [<a href="papers/seo2025oasis/seo2025oasis.bib" target="_new">bibtex</a>] -->
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-             </td>
-            </tr>
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/seo2025not/seo2025not.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <!-- <a href="https://dbd05088.github.io/projects/FedMosaic/"> -->
-              <papertitle>
-               Co-LoRA: Collaborative Model Personalization on Heterogeneous Multi-Modal Clients
-              </papertitle>
-              <!-- </a> -->
-              <br/>
-              <strong>
-               Minhyuk Seo
-              </strong>
-              *,
-                  Taeheon Kim*,
-              <a href="https://hankook.github.io/" target="_new">
-               Hankook Lee
-              </a>
-              ,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              ,
-              <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
-               Tinne Tuytelaars
-              </a>
-              <br/>
-              <strong>
-               ICLR 2026
-              </strong>
-              /
-              <b style="color:red;">
-               Best Paper Award
-              </b>
-              @ AAAI 2026 Workshop of PerFM
-              <br/>
-              [
-              <a href="https://openreview.net/forum?id=0g5Dk4Qfh0" target="_new">
-               pdf
-              </a>
-              ]
-              <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-             </td>
-            </tr>
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/seo2024just/seo2024just.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-              <papertitle>
-               GenOL: Generating Diverse Examples for Name Only Online Learning
-              </papertitle>
-              <!-- </a> -->
-              <br/>
-              <strong>
-               Minhyuk Seo
-              </strong>
-              ,
-                  Seongwon Cho,
-                  Minjae Lee,
-                  Diganta Misra,
-                  Hyeonbeom Choi,
-              <a href="https://sites.google.com/site/seonjookim/?pli=1" target="_new">
-               Seon Joo Kim
-              </a>
-              ,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              ,
-              <br/>
-              <strong>
-               TMLR 2025
-              </strong>
-              <br/>
-              [
-              <a href="https://openreview.net/forum?id=QPfVoTMLWq" target="_new">
-               pdf
-              </a>
-              ]
-              <!-- [<a href="papers/seo2024just/seo2024just.bib" target="_new">bibtex</a>] -->
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-             </td>
-            </tr>
-            <br/>
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/seo2024budgeted/seo2024budgeted.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <!-- <a href="https://dbd05088.github.io/projects/EARL/"> -->
-              <papertitle>
-               Budgeted Online Continual Learning by Adaptive Layer Freezing and Frequency-based Sampling
-              </papertitle>
-              <!-- </a> -->
-              <br/>
-              <!-- <strong>Byeonghwi Kim</strong>*, -->
-              <strong>
-               Minhyuk Seo
-              </strong>
-              *,
-                  Hyunseo Koh*,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              ,
-              <br/>
-              <!-- <span style="line-height:20%"><br></span> -->
-              <strong>
-               ICLR 2025
-               <b style="color:red;">
-                (Spotlight Presentation)
-               </b>
-              </strong>
-              <br/>
-              [
-              <a href="https://openreview.net/forum?id=dOAkHmsjRX" target="_new">
-               pdf
-              </a>
-              ]
-                  [
-              <a href="papers/seo2024budgeted/seo2024budgeted.bib" target="_new">
-               bibtex
-              </a>
-              ]
-              <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
-             </td>
-            </tr>
-            <!-- ################################################################################################################### -->
-            <!-- ################################################################################################################### -->
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/seo2024learning/seo2024learning.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <a href="https://dbd05088.github.io/projects/EARL/">
-               <papertitle>
-                Learning Equi-angular Representations for Online Continual Learning
-               </papertitle>
-              </a>
-              <br/>
-              <!-- <strong>Byeonghwi Kim</strong>*, -->
-              <strong>
-               Minhyuk Seo
-              </strong>
-              Hyunseo Koh, 
-                  Wonje Jeung, 
-                  Min Jae Lee, 
-                  San Kim,
-              <a href="http://hankook.github.io/" target="_new">
-               Hankook Lee
-              </a>
-              ,
-                  Sungjun Cho, 
-                  Sungik Choi, 
-                  Hyunwoo Kim,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              ,
-              <br/>
-              <strong>
-               CVPR 2024
-              </strong>
-              <!-- <br>
-                  <em>CoLLAs 2024 Workshop Track</em> -->
-              <br/>
-              [
-              <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Seo_Learning_Equi-angular_Representations_for_Online_Continual_Learning_CVPR_2024_paper.pdf" target="_new">
-               pdf
-              </a>
-              ]
-                  [
-              <a href="papers/seo2024online/seo2024online.bib" target="_new">
-               bibtex
-              </a>
-              ]
-                  [
-              <a href="https://github.com/yonseivnl/earl" target="_new">
-               code
-              </a>
-              ]
-             </td>
-            </tr>
-            <!-- ################################################################################################################### -->
-            <!-- ################################################################################################################### -->
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/kim2024online/kim2024online.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <a href="https://dbd05088.github.io/projects/CL-ALFRED/">
-               <papertitle>
-                Online Continual Learning for Interactive Instruction Following Agents
-               </papertitle>
-              </a>
-              <br/>
-              <!-- <strong>Byeonghwi Kim</strong>*, -->
-              <a href="http://bhkim94.github.io/" target="_new">
-               Byeonghwi Kim
-              </a>
-              *,
-              <strong>
-               Minhyuk Seo
-              </strong>
-              *,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              <br/>
-              <strong>
-               ICLR 2024
-              </strong>
-              <!-- <br>
-                <em>CoLLAs 2024 Workshop Track</em> -->
-              <br/>
-              [
-              <a href="https://openreview.net/pdf?id=7M0EzjugaN" target="_new">
-               pdf
-              </a>
-              ]
-                  [
-              <a href="papers/kim2024online/kim2024online.bib" target="_new">
-               bibtex
-              </a>
-              ]
-                  [
-              <a href="https://github.com/snumprlab/cl-alfred" target="_new">
-               code
-              </a>
-              ]
-             </td>
-            </tr>
-            <!-- ################################################################################################################### -->
-            <!-- ################################################################################################################### -->
-            <tr>
-             <td style="padding:5px;width:40%;vertical-align:middle">
-              <img src="papers/koh2023online/koh2023online.png" style="border-style: none width:100%;max-width:100%"/>
-             </td>
-             <td align="justify" valign="middle" width="75%">
-              <papertitle>
-               Online Boundary-Free Continual Learning by Scheduled Data Prior
-              </papertitle>
-              <br/>
-              <!-- <strong>Byeonghwi Kim</strong>*, -->
-              Hyunseo Koh,
-              <strong>
-               Minhyuk Seo
-              </strong>
-              ,
-              <a href="http://hwany-j.github.io/" target="_new">
-               Jihwan Bang
-              </a>
-              ,
-              <a href="http://songhwanjun.github.io/" target="_new">
-               Hwanjun Song
-              </a>
-              ,
-                  Deokki Hong, 
-                  Seulki Park,
-              <a href="http://aidljwha.wordpress.com/" target="_new">
-               Jung-Woo Ha
-              </a>
-              ,
-              <a href="http://ppolon.github.io/" target="_new">
-               Jonghyun Choi
-              </a>
-              <br/>
-              <strong>
-               ICLR 2023
-              </strong>
-              <b style="color:Magenta;">
-              </b>
-              <br/>
-              [
-              <a href="https://openreview.net/pdf?id=qco4ekz2Epm" target="_new">
-               pdf
-              </a>
-              ]
-                  [
-              <a href="papers/koh2023online/koh2023online.bib" target="_new">
-               bibtex
-              </a>
-              ]
-                  [
-              <a href="https://github.com/yonseivnl/sdp" target="_new">
-               code
-              </a>
-              ]
-             </td>
-            </tr>
-            <!-- ################################################################################################################### -->
-           </tbody>
-          </table>
-          <br/>
-          <p>
-          </p>
-          <table class="section-block" id="awards" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-           <tbody>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-             <heading>
-              &nbsp;&nbsp;&nbsp; Awards
-             </heading>
-            </td>
-           </tbody>
-          </table>
-          <div class="section-rule">
-          </div>
-          <ul>
-           <li>
-            <papertitle>
-             Travel Grant - The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2025
-            </papertitle>
-           </li>
-           <li>
-            <papertitle>
-             Travel Grant - International Conference on Learning Representations (ICLR) 2025
-            </papertitle>
-           </li>
-           <li>
-            <papertitle>
-             2nd Place Award - Class-Incremental with Repetition Scenario Challenge
-            </papertitle>
-            -
-            <a href="https://sites.google.com/view/clvision2024/challenge/challenge-results" target="_new">
-             CLVISION Workshop @ CVPR 2024
-            </a>
-           </li>
-           <li>
-            <papertitle>
-             Bronze Prize - Outstanding Paper Awards
-            </papertitle>
-            - IPIU 2024
-           </li>
-           <li>
-            <papertitle>
-             <a href="https://wvcl.vis.xyz/challenges" target="_new">
-             </a>
-             1st Place Award - Continual Test-time Adaptation for Object Detection Challenge
-            </papertitle>
-            -
-            <a href="https://wvcl.vis.xyz/challenges" target="_new">
-             VCL Workshop @ ICCV 2023
-            </a>
-            <!-- [<a href="https://yonseivnl.github.io/research/papers/iccvw23_paper_ttadame.pdf" target="_new">Technical Report</a>] -->
-           </li>
-           <li>
-            <papertitle>
-             1st Place Award (Minister of Science, ICT and Future Planning Award)
-            </papertitle>
-            - HANIUM ICT competition 2019
-           </li>
-          </ul>
-          <br/>
-          <p>
-          </p>
-          <table class="section-block" id="service" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-           <tbody>
-            <td style="padding:0px;width:100%;vertical-align:middle">
-             <heading>
-              &nbsp;&nbsp;&nbsp; Academic Services
-             </heading>
-            </td>
-           </tbody>
-          </table>
-          <div class="section-rule">
-          </div>
-          <ul>
-           <li>
-            Reviewer
-            <br/>
-            <ul>
-             <li>
-              CVPR (2024-2026), ICML (2024-2026), ICLR (2024-2026), AISTATS (2025-2026), ICRA (2025), TPAMI (2024-2026), NeurIPS (2024-2026), IJCV (2025-2026), ICCV (2025), WACV (2026), ECCV (2026), AAAI (2026-2027), ACL ARR (May 2025), CoRL @ LLHomeRobots (2024)
-             </li>
-            </ul>
-           </li>
-           <li>
-            Program committee member
-            <br/>
-            <ul>
-             <li>
-              Challenge chair at
-              <a href="https://sites.google.com/view/clvision2025/organizers?authuser=0" target="_new">
-               ICCV 2025 @ Continual Learning and Computer Vision Workshop
-              </a>
-             </li>
-            </ul>
-           </li>
-          </ul>
-          <br/>
-          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <td style="padding:0px;width:100%;vertical-align:middle"><heading>&nbsp&nbsp&nbsp Academic Services</heading></td>
-            </tbody></table>
-            <ul>
-              <li><papertitle>Reviewer</papertitle></li>
-              <ol style="margin-left: -3em">- CVPR(24') </ol>
-            </ul> -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-           <tbody>
-            <tr>
-             <td style="padding:0px">
-              <br/>
-              <p class="footer-note" style="text-align:right;font-size:small;">
-               This template is from
-               <a href="https://jonbarron.info/" target="_new">
-                Jon Barron
-               </a>
-               .
-              </p>
-             </td>
-            </tr>
-           </tbody>
-          </table>
          </td>
         </tr>
        </tbody>
       </table>
-     </body>
-    </html>
-    
-<br/>
-<p></p>
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr>
-<td style="padding:0px">
-<br/>
-<p class="footer-note" style="text-align:right;font-size:small;">
-                This template is from <a href="https://jonbarron.info/" target="_new">Jon Barron</a>.
-              </p>
-</td>
-</tr>
-</tbody></table>
-</td>
-</tr>
-</tbody></table>
-</body>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
 </html>
