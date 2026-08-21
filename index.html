@@ -373,6 +373,55 @@ li {
   </style>
   <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
   <link href="images/seal_icon.png" rel="icon" type="image/png"/>
+  <style type="text/css">
+   /* -------------------------------------------------------
+   Section spacing overrides
+   Keep this block after stylesheet.css.
+------------------------------------------------------- */
+.section-block {
+  display: block !important;
+  width: 100% !important;
+  margin: 46px 0 0 !important;
+  padding: 0 !important;
+  scroll-margin-top: 82px;
+}
+
+.section-block heading {
+  display: block !important;
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+  line-height: 1.25 !important;
+}
+
+.section-rule {
+  width: 46px !important;
+  height: 3px !important;
+  margin: 0 0 22px !important;
+  padding: 0 !important;
+}
+
+.section-rule + .news-scroller,
+.section-rule + .experience-table,
+.section-rule + .publications-table,
+.section-rule + ul {
+  margin-top: 0 !important;
+}
+
+.experience-table {
+  margin-top: 0 !important;
+  border-spacing: 0 10px !important;
+}
+
+.publications-table {
+  margin-top: 0 !important;
+  border-spacing: 0 18px !important;
+}
+
+/* Avoid artificial vertical gaps from empty legacy elements. */
+.section-block + .section-rule + table > tbody > tr:first-child {
+  margin-top: 0 !important;
+}
+  </style>
  </head>
  <body>
   <nav class="top-nav">
@@ -429,14 +478,26 @@ li {
           <p style="text-align:justify">
           </p>
           Before joining UC Berkeley, I was a Research Associate at
-            <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>,
+          <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">
+           KU Leuven
+          </a>
+          ,
             working with
-            <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Prof. Tinne Tuytelaars</a>.
+          <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">
+           Prof. Tinne Tuytelaars
+          </a>
+          .
             
             I earned my M.S. and B.S. degrees in Computer Science from
-            <a href="https://www.yonsei.ac.kr/sites/en_sc/index.do" target="_new">Yonsei University</a>,
+          <a href="https://www.yonsei.ac.kr/sites/en_sc/index.do" target="_new">
+           Yonsei University
+          </a>
+          ,
             advised by
-            <a href="http://ppolon.github.io/" target="_new">Prof. Jonghyun Choi</a>.
+          <a href="http://ppolon.github.io/" target="_new">
+           Prof. Jonghyun Choi
+          </a>
+          .
           <!-- , currently a research associate in <a href="https://www.esat.kuleuven.be/psi" target="_new">ESAT-PSI</a> Lab at <a href="https://www.kuleuven.be/english/kuleuven/index.html" target="_new">KU Leuven</a>, advised by Prof. <a href="https://www.esat.kuleuven.be/psi/TT" target="_new">Tinne Tuytelaars</a>. -->
           <p style="text-align:justify">
            My research focuses on human-like AI, inspired by how humans learn and evolve. 
@@ -500,16 +561,11 @@ li {
         </tr>
        </tbody>
       </table>
-      <br/>
-      <table class="section-block" id="news" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-       <tbody>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-         <heading>
-          &nbsp;&nbsp;&nbsp; News
-         </heading>
-        </td>
-       </tbody>
-      </table>
+      <div class="section-block" id="news">
+       <heading>
+        News
+       </heading>
+      </div>
       <div class="section-rule">
       </div>
       <!-- I received CVPR 2022 Outstanding Reviewer Award -->
@@ -722,29 +778,16 @@ li {
         </tbody>
        </table>
       </div>
-      <p>
-      </p>
-      <p>
-      </p>
-      <br/>
-      <table class="section-block" id="experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-       <tbody>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-         <heading>
-          &nbsp;&nbsp;&nbsp; Work Experience
-         </heading>
-        </td>
-       </tbody>
-      </table>
+      <div class="section-block" id="experience">
+       <heading>
+        Work Experience
+       </heading>
+      </div>
       <div class="section-rule">
       </div>
-      <p>
-      </p>
       <table class="experience-table" style="width:100%;border:10px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;text-align:justify;">
        <tbody>
         <!-- KU Leuven -->
-        <tr style="height: 15px;">
-        </tr>
         <!-- 간격 추가 -->
         <tr>
          <td align="center" style="padding:10px;width:25%;vertical-align:middle">
@@ -839,20 +882,11 @@ li {
 
         <table style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify"><tbody>
         </tbody></table> -->
-      <p>
-      </p>
-      <p>
-      </p>
-      <br/>
-      <table class="section-block" id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-       <tbody>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-         <heading>
-          &nbsp;&nbsp;&nbsp; Publications
-         </heading>
-        </td>
-       </tbody>
-      </table>
+      <div class="section-block" id="publications">
+       <heading>
+        Publications
+       </heading>
+      </div>
       <div class="section-rule">
       </div>
       <table class="publications-table" style="width:100%;border:0px;border-spacing:20px;padding:0px;border-collapse:separate;margin-right:auto;margin-left:auto;;style=text-align:justify">
@@ -1021,7 +1055,6 @@ li {
           <!-- [<a href="https://github.com/snumprlab/cl-alfred" target="_new">code</a>] -->
          </td>
         </tr>
-        <br/>
         <tr>
          <td style="padding:5px;width:40%;vertical-align:middle">
           <img src="papers/seo2024budgeted/seo2024budgeted.png" style="border-style: none width:100%;max-width:100%"/>
@@ -1231,18 +1264,11 @@ li {
         <!-- ################################################################################################################### -->
        </tbody>
       </table>
-      <br/>
-      <p>
-      </p>
-      <table class="section-block" id="awards" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-       <tbody>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-         <heading>
-          &nbsp;&nbsp;&nbsp; Awards
-         </heading>
-        </td>
-       </tbody>
-      </table>
+      <div class="section-block" id="awards">
+       <heading>
+        Awards
+       </heading>
+      </div>
       <div class="section-rule">
       </div>
       <ul>
@@ -1290,18 +1316,11 @@ li {
         - HANIUM ICT competition 2019
        </li>
       </ul>
-      <br/>
-      <p>
-      </p>
-      <table class="section-block" id="service" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-       <tbody>
-        <td style="padding:0px;width:100%;vertical-align:middle">
-         <heading>
-          &nbsp;&nbsp;&nbsp; Academic Services
-         </heading>
-        </td>
-       </tbody>
-      </table>
+      <div class="section-block" id="service">
+       <heading>
+        Academic Services
+       </heading>
+      </div>
       <div class="section-rule">
       </div>
       <ul>
